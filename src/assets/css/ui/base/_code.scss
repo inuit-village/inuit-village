@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+
+/*
+
+code{
+    font-family: 'Inconsolata', ;
+    background-color: $ui-color--pale;
+    padding: quarter($su--large);
+    color: $brand-color;
+    @include ui-round();
+}
+
+pre{
+    @extend %box;
+    // background-color: $ui-color--heavy;
+    @include ui-round();
+
+    @include media-query(palm){
+        padding: $su--small !important;
+    };
+
+    padding: $inuit-base-spacing-unit--large;
+
+    code{
+        padding: 0;
+        background-color: transparent;
+        color: $color--neutral;
+    }
+}
+
+
+*/
+

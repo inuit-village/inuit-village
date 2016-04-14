@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+h1,
+.alpha,
+%alpha,
+h2,
+.beta,
+%beta,
+h3,
+.gamma,
+%gamma,
+h4,
+.delta,
+%delta,
+h5,
+.epsilon,
+%epsilon,
+h6,
+.zeta,
+%zeta{
+    font-family: 'Bitter', serif;
+}
+
+/* TODO: can't find %palm-gamma & %palm-delta
+h1,
+.alpha,
+%alpha{
+    @extend %palm-gamma;
+}
+
+h3,
+.gamma,
+%gamma{
+    @extend %palm-delta;
+}
+*/
+
+a{
+    color: $brand-color;
+    @include ui-transition();
+
+    &:hover{
+        color: $inuit-base-text-color;
+    }
+}
+
+
+ul{
+    margin-left: 1em; // align normal lists to the left
+}

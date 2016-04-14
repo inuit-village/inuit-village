@@ -1,0 +1,35 @@
+{{> _page-head}}
+
+
+<div class="o-page-wrap">
+    <div class=" layout  layout--rev">
+        <div class=" layout__item  u-10/12  u-1/1-portable  u-mb++ ">
+            <h1 class="u-mb0">{{title}}</h1>
+            <div class="u-mb">
+                {{> _source}}<br>
+                {{#if demo}}<a class="zeta" href="{{demo}}.html">Demo</a>{{/if}}
+            </div>
+            {{!#markdown}}
+                {{>body}}
+            {{!/markdown}}
+            {{!> _pagination}}
+        </div><!--
+
+        --><div class=" layout__item  u-2/12  u-1/1-portable ">
+            {{> _site-nav modules}}
+        </div>
+    </div>
+</div>
+
+
+{{> _page-foot}}
+
+
+<!-- build:remove -->
+<script type="text/javascript">document.write('<script src="http://'
++ (location.host || 'localhost').split(':')[0]
++ ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+</script>
+<!-- /build -->
+</body>
+</html>

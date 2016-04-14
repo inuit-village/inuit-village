@@ -1,0 +1,34 @@
+---
+title: "_tools.functions.scss"
+source: "https://github.com/inuitcss/tools.functions/blob/master/_tools.functions.scss"
+prev: "settings.responsive"
+next: "tools.mixins"
+---
+***This module is required and must be present in every inuitcss-project.**
+
+It contains mathematical helpers for later use throughout the framework.
+
+```
+@function quarter($inuit-number) {
+    @return round($inuit-number / 4);
+}
+
+@function halve($inuit-number) {
+    @return round($inuit-number / 2);
+}
+
+@function double($inuit-number) {
+    @return round($inuit-number * 2);
+}
+
+@function quadruple($inuit-number) {
+    @return round($inuit-number * 4);
+}
+```
+
+You can use these functions all over your project to quarter, halve, double or quadruple all kinds of values. If you want to double your `$inuit-base-spacing-unit--large` for example, you would do it this way:
+```
+.teaser{
+    margin-bottom: double($inuit-base-spacing-unit--large);
+}
+```
