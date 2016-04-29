@@ -37,5 +37,7 @@ Igloos are made by their authors:
 
 
 [Harry Roberts](https://github.com/csswizardry)
+
 [Dennis Heibuelt](https://github.com/csshugs)
+
 [Rodrigo Erades](https://github.com/area73)
