@@ -1,0 +1,19 @@
+<p>The box object provides the following modifiers:</p>
+<ul>
+    
+<li><code>box--tiny</code></li>
+<li><code>box--small</code></li>
+<li><code>box--large</code></li>
+<li><code>box--huge</code></li>
+<li><code>box--flush</code></li>
+</ul>
+
+<p></p><code>.box--tiny</code> , <code>.box--small</code> , <code>.box--large</code> , <code>.box--huge</code> all vary the padding of the `.box`. Each one has its own dedicated variable to control that padding:</p>
+<pre class="prettyprint">
+$inuit-box--padding--tiny: quarter($inuit-box-padding) !default;
+$inuit-box--padding--small: halve($inuit-box-padding) !default;
+$inuit-box--padding--large: double($inuit-box-padding) !default;
+$inuit-box--padding--huge: quadruple($inuit-box-padding) !default;
+</pre>
+
+<code>.box--flush</code> removes the padding from <code>.box</code>.

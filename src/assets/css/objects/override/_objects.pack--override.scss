@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #PACK
+\*------------------------------------*/
+
+/**
+ * The pack object simply causes any number of elements pack up horizontally to
+ * automatically fill an equal, fluid width of their parent.
+ */
+
+.#{$inuit-pack-namespace}pack,
+%#{$inuit-pack-namespace}pack {
+   // elements
+    &__item {
+        
+    }
+}

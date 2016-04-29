@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #BLOCK
+\*------------------------------------*/
+
+/**
+ * The block object simply stacks an image on top of some text-like content.
+ */
+
+
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ */
+.#{$inuit-block-namespace}block,
+%#{$inuit-block-namespace}block {
+
+    // ELEMENT
+    // -------
+    &__img {
+
+    }
+
+    &__body {
+
+    }
+}

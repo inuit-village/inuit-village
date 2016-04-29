@@ -1,0 +1,40 @@
+
+
+<p>If you want to assign a specific font-size to an element (e.g. 36px), you would apply the mixin as follows:</p>
+<pre class="prettyprint">
+.page-intro{
+    @include inuit-font-size(36px);
+}
+</pre>
+
+<p>This spits out the following css:</>
+<pre class="prettyprint">
+.page-intro{
+    font-size: 36px;
+    font-size: 2rem;
+    line-height: 1.55556;
+}
+</pre>
+<p>
+The pixel-based font-size declaration serves as fallback for browsers not supporting the rem unit. If the browser supports rem, it will use the rem value instead. Beyond that, the mixin generates a line-height that maintains the vertical rhythm in your project.
+</p>
+<p>If you will however declare a custom line-height, you can pass it to the mixin as an argument:</p>
+<pre class="prettyprint">
+.page-intro{
+    @include inuit-font-size(36px, 1.25);
+}
+</pre>
+
+<p>You can also prevent the mixin from generating a line-height at all:</p>
+<pre class="prettyprint">
+.page-intro{
+    @include inuit-font-size(36px, false);
+}
+</pre>
+<p>which will produce:</p>
+<pre class="prettyprint">
+.page-intro{
+    font-size: 36px;
+    font-size: 2rem;
+}
+</pre>

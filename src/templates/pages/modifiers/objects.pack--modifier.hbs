@@ -1,0 +1,37 @@
+<p>The pack object provides the following modifiers:</p>
+<ul>
+
+    <li><code>pack--tiny</code></li>
+    <li><code>pack--small</code></li>
+    <li><code>pack--large</code></li>
+    <li><code>pack--huge</code></li>
+    <li><code>pack--auto</code></li>
+    <li><code>pack--rev</code></li>
+    <li><code>pack--middle</code></li>
+    <li><code>pack--bottom</code></li>
+</ul>
+
+<p><code>.pack--tiny</code> , <code>pack--small</code> , <code>pack--large</code> , <code>pack--huge</code> all vary the
+    spacing between the pack-items. Each one has its own dedicated variable to control that spacing:</p>
+<pre class="prettyprint">
+$inuit-pack-gutter--tiny: quarter($inuit-pack-gutter) !default;
+$inuit-pack-gutter--small: halve($inuit-pack-gutter) !default;
+$inuit-pack-gutter--large: double($inuit-pack-gutter) !default;
+$inuit-pack-gutter--huge: quadruple($inuit-pack-gutter) !default;
+</pre>
+
+<code>.pack--auto</code> causes the items to have an automatically width, determined by their contents width.
+
+<p></p>With <code>.pack--rev</code> you can reverse the order of the pack-items.</p>
+
+<p>By default the pack-items are top-aligned. You can align them vertically middle via <code>.packk--middle</code> or to
+    the bottom with <code>.pack--bottom</code>.</p>
+
+<p>Of course you can combine several modifiers like:</p>
+<pre class="prettyprint">
+    {{#html2txt}}
+<div class="pack  pack--large  pack--rev  pack--bottom">
+    ...
+</div>
+    {{/html2txt}}
+</pre>

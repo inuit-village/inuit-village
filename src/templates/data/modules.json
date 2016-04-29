@@ -3,66 +3,86 @@
     {
       "layer": "settings",
       "modules": [
+        "colors",
         "default",
-        "responsive"
+        "responsive",
+        "z-index"
       ]
     },
     {
       "layer": "tools",
       "modules": [
+        "colors",
         "functions",
         "mixins",
-        "responsive"
+        "pull",
+        "push",
+        "responsive",
+        "widths",
+        "z-index"
       ]
     },
     {
       "layer": "generic",
       "modules": [
-        "box-sizing"
+        "box-sizing",
+        "normalize",
+        "reset",
+        "shared"
       ]
     },
     {
       "layer": "base",
       "modules": [
         "headings",
-        "paragraphs",
-        "images"
+        "images",
+        "lists",
+        "page",
+        "paragraphs"
       ]
     },
     {
       "layer": "objects",
       "modules": [
-        "media",
-        "flag",
         "block",
-        "pack",
         "box",
-        "list-bare",
-        "list-inline",
-        "list-block",
-        "list-ui",
-        "tabs",
         "buttons",
-        "tables",
+        "flag",
         "layout",
-        "icon",
-        "page-wrap"
+        "list-bare",
+        "list-block",
+        "list-inline",
+        "list-ui",
+        "media",
+        "pack",
+        "page-wrap",
+        "tables",
+        "tabs",
+        "text-input"
       ]
     },
     {
       "layer": "trumps",
       "modules": [
-        "headings",
-        "spacing",
-        "spacing-responsive",
-        "widths",
-        "widths-responsive",
         "clearfix",
         "float",
+        "float-responsive",
         "font-weight",
+        "font-weight-responsive",
+        "headings",
+        "headings-responsive",
         "hide",
+        "print",
         "pull",
-        "push"
+        "pull-responsive",
+        "push",
+        "push-responsive",
+        "spacing",
+        "spacing-responsive",
+        "text-align",
+        "text-align-responsive",
+        "widths",
+        "widths-responsive"
       ]
     }
   ]

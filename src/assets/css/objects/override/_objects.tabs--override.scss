@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #TABS
+\*------------------------------------*/
+
+/**
+ * A simple abstraction for making equal-width navigation tabs.
+ */
+
+
+.#{$inuit-tabs-namespace}tabs,
+%#{$inuit-tabs-namespace}tabs {
+    // elements
+    &__item {
+
+    }
+    &__link {
+
+    }
+
+}
+

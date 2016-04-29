@@ -1,26 +1,24 @@
 ---
 title: "_objects.tabs.scss"
 source: "https://github.com/inuitcss/objects.tabs/blob/master/_objects.tabs.scss"
-demo: "tabs"
-prev: "objects.list-ui"
-next: "objects.buttons"
+
+author: "Harry Roberts"
+author_url: "https://github.com/csswizardry"
+
+required: false
+dependences: [
+{name: "inuit-defaults", url: "settings.default.html"},
+{name: "inuit-functions", url: "tools.functions.html"},
+{name: "inuit-normalize", url: "generic.normalize.html"}
+]
+usages: []
+
+package_name: "inuit-tabs"
+version: "0.2.1"
+
+tab_markup: "objects.tabs--markup"
+tab_demo: "objects.tabs--demo"
+tab_settings: "objects.tabs--settings"
 ---
-The tabs object is very similar to the [pack](objects.pack.html) object.
 
-### Markup
-```html
-<ul class="tabs">
-    <li class="tabs__item">
-        <a href="#" class="tabs__link">Foo</a>
-    </li>
-    <li class="tabs__item">
-        <a href="#" class="tabs__link">Bar</a>
-    </li>
-    <li class="tabs__item">
-        <a href="#" class="tabs__link">Baz</a>
-    </li>
-</ul>
-```
-`.tabs__link` can be omitted. It just sets the link to `display: block`.
-
-### [Demo](tabs.html)
+<p>The tabs object is very similar to the <a href="objects.pack.html">pack object</a>.</p>

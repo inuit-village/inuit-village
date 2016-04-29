@@ -1,0 +1,72 @@
+<div class="layout layout--auto layout--legend layout--flush">
+
+    {{#if source}}
+        <div class="layout__item u-ph u-mr-- u-mt-- u-pv--">
+            <h2 class="epsilon  u-m0">Source code</h2>
+            <a class="" href="{{ source }}" target="_blank">View source</a>
+        </div>
+    {{/if}}
+
+    {{#if author}}
+        <div class="layout__item u-ph u-mr-- u-mt--  u-pv--">
+            <h2 class="epsilon  u-m0">Author</h2>
+            {{#if author_url}}
+                <a href="{{author_url}}" target="_blank">
+                    {{author}}
+                </a>
+            {{else}}
+                {{author}}
+            {{/if}}
+        </div>
+    {{/if}}
+
+    {{#if package_name}}
+        <div class="layout__item u-ph u-mr-- u-mt-- u-pv--">
+            <h2 class="epsilon  u-m0">Package Name</h2>
+            {{package_name}}
+        </div>
+    {{/if}}
+
+    {{#if version}}
+        <div class="layout__item u-ph u-mr-- u-mt-- u-pv--">
+            <h2 class="epsilon  u-m0">Version</h2>
+            {{version}}
+        </div>
+    {{/if}}
+
+    {{#if required}}
+    <div class="layout__item layout__item--required  u-ph u-mr-- u-mt--  u-pv--">
+        <h2 class="epsilon  u-m0">Required</h2>
+           yes
+    </div>
+    {{/if}}
+
+    {{#if dependences}}
+        <div class="layout__item u-1/1 u-ph u-mr-- u-mt-- u-pv--">
+            <h2 class="epsilon  u-m0">Dependences</h2>
+            {{> _dependences}}
+        </div>
+    {{/if}}
+
+    {{#if usages}}
+        <div class="layout__item u-1/1 u-ph u-mr-- u-mt-- u-pv--">
+            <h2 class="epsilon  u-m0">Usages</h2>
+            {{> _usages}}
+        </div>
+    {{/if}}
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

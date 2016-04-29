@@ -1,0 +1,21 @@
+///*------------------------------------*\
+//    #SETTINGS-RESPONSIVE
+//\*------------------------------------*/
+
+// Hold our breakpoint aliases and conditions in a list.
+//
+// These can be invoked later on via the `media-query()` mixin found in
+// `_tools.responsive`.
+
+$breakpoints: (
+    "palm"          "screen and (max-width: 639px)",
+    "lap"           "screen and (min-width: 640px) and (max-width: 990px)",
+    "lap-and-up"    "screen and (min-width: 640px)",
+    "portable"      "screen and (max-width: 990px)",
+    "desk"          "screen and (min-width: 991px)",
+    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+);
+
+// If we have included this file, set a variable to tell the rest of the
+// framework that we have some responsive settings.
+$inuit-responsive-settings: true;

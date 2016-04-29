@@ -2,8 +2,8 @@
 
 /*!
  *
- * inuit kitchen sink
- * https://github.com/csshugs/inuit-kitchen-sink
+ * inuit village
+ * https://github.com/inuit-village/inuit-village
  *
  */
 
@@ -11,17 +11,21 @@
 // *******      SETTINGS        *******
 // ************************************
 
-    @import "settings/*.*";
+    @import "settings/setup/*.*";
     // .......................
     @import "inuit-defaults/_settings.defaults";
     @import "inuit-responsive-settings/_settings.responsive";
+    @import "a73-inuit-colors-settings/_settings.colors";
+    @import "a73-inuit-z-index-settings/_settings.z-index";
+    // .......................
+    @import "settings/*.*";
 
 // ************************************
 // *******      #TOOLS          *******
 // ************************************
 
 
-    @import "tools/*.*";
+    @import "tools/setup/*.*";
     // .................
     @import "inuit-functions/_tools.functions";
     @import "inuit-mixins/_tools.mixins";
@@ -29,36 +33,46 @@
     @import "inuit-tools-widths/_tools.widths";
     @import "inuit-tools-pull/_tools.pull";
     @import "inuit-tools-push/_tools.push";
+    @import "a73-inuit-colors-tools/_tools.colors";
+    @import "a73-inuit-z-index-tools/_tools.z-index";
+    // .................
+    @import "tools/*.*";
 
 // ************************************
 // *******      #GENERIC        *******
 // ************************************
 
-    @import "ui/generic/*.*";
+    @import "generic/setup/*.*";
     // ......................
     @import "inuit-box-sizing/_generic.box-sizing";
     @import "inuit-normalize/_generic.normalize";
     @import "inuit-reset/_generic.reset";
     @import "inuit-shared/_generic.shared";
+    // ......................
+    @import "generic/override/*.*";
+    @import "generic/*.*";
 
 
 // ************************************
 // *******      #BASE           *******
 // ************************************
 
-    @import "ui/base/*.*";
+    @import "base/setup/*.*";
     // ...................
     @import "inuit-page/_base.page";
     @import "inuit-headings/_base.headings";
     @import "inuit-paragraphs/_base.paragraphs";
     @import "inuit-lists/_base.lists";
     @import "inuit-images/_base.images";
+    // ...................
+    @import "base/override/*.*";
+    @import "base/*.*";
 
 // ************************************
 // *******      #OBJECTS        *******
 // ************************************
 
-    @import "ui/objects/*.*";
+    @import "objects/setup/*.*";
     // ......................
     @import "inuit-layout/_objects.layout";
     @import "inuit-block/_objects.block";
@@ -76,26 +90,41 @@
     @import "inuit-tables/_objects.tables";
     @import "inuit-tabs/_objects.tabs";
     @import "inuit-text-input/_objects.text-input";
+    // ............................
+    @import "objects/override/*.*";
+    @import "objects/*.*";
+
+
 
 // ************************************
 // *******      #COMPONENTS     *******
 // ************************************
 
-    @import "ui/components/*.*";
+    @import "components/setup/*.*";
+    // ...................
+    // bower components
     // .........................
+    @import "components/override/*.*";
+    @import "components/*.*";
+
+
 
 // ************************************
 // *******      #PLUGINS        *******
 // ************************************
 
-    @import "ui/plugins/*.*";
-    // ......................
+    @import "plugins/setup/*.*";
+    // ...................
+    // bower components
+    // .........................
+    @import "plugins/override/*.*";
+    @import "plugins/*.*";
 
 // ************************************
 // *******      #TRUMPS         *******
 // ************************************
 
-    @import "ui/trumps/*.*";
+    @import "trumps/setup/*.*";
     // .....................
     @import "inuit-clearfix/_trumps.clearfix";
     @import "inuit-widths/_trumps.widths";
@@ -117,8 +146,12 @@
     @import "inuit-headings-trumps/_trumps.headings";
     @import "inuit-responsive-headings/_trumps.headings-responsive";
     // .............................................................
+    @import "trumps/override/*.*";
+    @import "trumps/*.*";
 
-    @import "ui/shame";
+
+///////////////////////////////////
+    @import "shame";
     // ................
 
 

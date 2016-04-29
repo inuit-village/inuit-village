@@ -1,0 +1,49 @@
+<p>The flag object provides the following modifiers:</p>
+<ul>
+    <li><code>.flag--tiny</code></li>
+    <li><code>.flag--small</code></li>
+    <li><code>.flag--large</code></li>
+    <li><code>.flag--huge</code></li>
+    <li><code>.flag--rev</code></li>
+    <li><code>.flag--flush</code></li>
+    <li><code>.flag--top</code></li>
+    <li><code>.flag--bottom</code></li>
+    <li><code>.flag--responsive</code></li>
+</ul>
+
+
+<p></p><code>.flag--tiny</code>, <code>.flag--small</code>, <code>.flag--large</code>,
+<code>.flag--huge</code> all vary the spacing between <code>.flag__img</code> and
+<code>.flag__body</code>. Each one has its own dedicated variable to control that spacing:</p>
+
+<pre class="prettyprint">
+$inuit-flag-gutter--tiny: quarter($inuit-flag-gutter) !default;
+$inuit-flag-gutter--small: halve($inuit-flag-gutter) !default;
+$inuit-flag-gutter--large: double($inuit-flag-gutter) !default;
+$inuit-flag-gutter--huge: quadruple($inuit-flag-gutter) !default;
+</pre>
+
+<p><code>.flag--flush</code> will eliminate this spacing completely.</p>
+
+<p>If you want the image to appear at the right side rather than on the left side, you don't need to touch the markup. Just assign the
+<code>.flag--rev</code> modifier to <code>.flag</code>.</p>
+
+   <p> If you do not want the <code>.flag__img</code> and <code>.flag__body</code> to be aligned vertically, the <code>.flag--top</code>
+    and <code>.flag--bottom</code> modifiers are available.</p>
+
+<p>If your project is responsive-based, you will likely run into the situation, where there isn't any horizontal space
+    for <code>.flag__img</code> and <code>.flag__body</code> together anymore. You can assign the <code>.flag--responsive</code>
+    modifier to let the <code>.flag__body</code> collapse beneath the image. You can also control, <strong>when</strong> it should
+    collapse via:</p>
+<pre class="prettyprint">
+$inuit-flag-collapse-at:   720px !default;
+</pre>
+
+   <p> Of course you can combine several modifiers like:</p>
+<pre class="prettyprint">
+    {{#html2txt}}
+        <div class="flag  flag--large  flag--rev  flag--bottom  flag--responsive">
+    ...
+</div>
+    {{/html2txt}}
+</pre>

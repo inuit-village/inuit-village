@@ -1,19 +1,26 @@
 ---
 title: "_settings.responsive.scss"
 source: "https://github.com/inuitcss/settings.responsive/blob/master/_settings.responsive.scss"
-prev: "settings.default"
-next: "tools.functions"
----
-This module defines the projects breakpoints for later use in the [media-query mixin](tools.responsive.html), the [responsive widths](trumps.widths-responsive.html) and the [responsive spacings](trumps.spacing-responsive.html).
+author: "Harry Roberts"
+author_url: "https://github.com/csswizardry"
+required: false
+dependences: []
+usages: [
+        {name: "media-query mixin", url: "tools.responsive.html"},
+        {name: "responsive widths", url: "trumps.widths-responsive.html"},
+        {name: "responsive spacings" , url: "trumps.spacing-responsive.html"}
+]
 
-```
-$breakpoints: (
-    "palm"          "screen and (max-width: 44.9375em)",
-    "lap"           "screen and (min-width: 45em) and (max-width: 63.9375em)",
-    "lap-and-up"    "screen and (min-width: 45em)",
-    "portable"      "screen and (max-width: 63.9375em)",
-    "desk"          "screen and (min-width: 64em)",
-    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
-) !default;
-```
-You can change these values to your needs and add more to the list if you lack any breakpoint by copying this whole list into your css and add your changes.
+package_name: "inuit-responsive-settings"
+version: "0.1.5"
+
+tab_settings: "settings.responsive--settings"
+---
+
+
+<p>
+    This module defines the projects breakpoints for later use in the
+    <a href="tools.responsive.html">_tools.responsive</a>,
+    the <a href="trumps.widths-responsive.html">responsive widths</a> and
+    the <a href="trumps.spacing-responsive.html">responsive spacings</a>.
+</p>

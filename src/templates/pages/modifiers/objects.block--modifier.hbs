@@ -1,0 +1,35 @@
+<p>The block object provides the following modifiers:</p>
+<ul>
+    <li><code>block--tiny</code></li>
+    <li><code>block--small</code></li>
+    <li><code>block--large</code></li>
+    <li><code>block--huge</code></li>
+    <li><code>block--rev</code></li>
+    <li><code>block--flush</code></li>
+    <li><code>block--center</code></li>
+    <li><code>block--right</code></li>
+</ul>
+
+<code>.block--tiny</code>, <code>.block--small</code>, <code>.block--large</code>,
+<code>.block--huge</code> all vary the spacing between <code>.block__img</code> and
+<code>.block__body</code>. Each one has its own dedicated variable to control that spacing:
+<pre class="prettyprint">
+$inuit-block-gutter--tiny: quarter($inuit-block-gutter) !default;
+$inuit-block-gutter--small: halve($inuit-block-gutter) !default;
+$inuit-block-gutter--large: double($inuit-block-gutter) !default;
+$inuit-block-gutter--huge: quadruple($inuit-block-gutter) !default;
+</pre>
+
+<p><code>.block--flush</code> will eliminate this spacing completely.</p>
+
+<p>If the image, as well as the content should be aligned centered, the <code>.block--center</code> modifier is
+    provided, as well as a <code>.block--right</code> modifier which alignes the image and the content to the right.</p>
+
+<p>Of course you can combine several modifiers like:</p>
+<pre class="prettyprint">
+    {{#html2txt}}
+        <div class="block  block--large  block--right">
+    ...
+</div>
+    {{/html2txt}}
+</pre>

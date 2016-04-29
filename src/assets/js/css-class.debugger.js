@@ -72,7 +72,7 @@ $(function () {
                 tempClass.forEach(function (value) {
                     if (allClasses.indexOf(value) == -1 && value.length > 0 )  {
                         obj.addClass('no-css');
-                        console.warn('class not found: ' , value);
+                       //  console.warn('class not found: ' , value);
                     }
                 });
             });

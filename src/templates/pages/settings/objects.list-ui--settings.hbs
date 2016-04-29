@@ -1,0 +1,28 @@
+<p>You can setup a ui namespace</p>
+<pre class="prettyprint">
+$inuit-list-ui-namespace:       $inuit-namespace !default;
+</pre>
+
+<p>You can alter the padding of each <code>.list-ui__item</code> with the <code>$inuit-list-ui-padding</code> variable:</p>
+<pre class="prettyprint">
+$inuit-list-ui-padding:         $inuit-base-spacing-unit !default;
+$inuit-list-ui-padding--tiny:     quarter($inuit-list-ui-padding) !default;
+$inuit-list-ui-padding--small:      halve($inuit-list-ui-padding) !default;
+$inuit-list-ui-padding--large:     double($inuit-list-ui-padding) !default;
+$inuit-list-ui-padding--huge:   quadruple($inuit-list-ui-padding) !default;
+</pre>
+
+<p>Furthermore you can modify the style of the border between the list-items:</p>
+<pre class="prettyprint">
+$inuit-list-ui-border-width:    1px !default;
+$inuit-list-ui-border-style:    solid !default;
+$inuit-list-ui-border-color:    #ccc !default;
+</pre>
+
+<p>or enable/disable modifiers</p>
+<pre class="prettyprint">
+$inuit-enable-list-ui--tiny:    false !default;
+$inuit-enable-list-ui--small:   false !default;
+$inuit-enable-list-ui--large:   false !default;
+$inuit-enable-list-ui--huge:    false !default;
+</pre>

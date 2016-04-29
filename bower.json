@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/inuit-village/inuit-village",
   "authors": [
-    "Rodrigo Erades <rerades@siete3.com>"
+    "Rodrigo Erades <rerades@siete3.com>",
     "Dennis Heibült <dennis@csshugs.com>"
   ],
   "description": "Inuit Village for inuitcss' modules",
@@ -62,6 +62,9 @@
     "inuit-text-align": "0.2.0",
     "inuit-text-input": "0.2.0",
     "inuit-widths": "0.4.2",
-    "inuit-widths-responsive": "0.2.2"
+    "inuit-widths-responsive": "0.2.2",
+    "responsive-tabs": "^1.6.0",
+    "a73-inuit-colors-tools": "^0.1.0",
+    "a73-inuit-z-index-tools": "^0.1.0"
   }
 }

@@ -4,7 +4,7 @@ module.exports.register = function (Handlebars, options)  {
         var randomLink = 'code-'+Math.round(Math.random()*1000);
         var block = [
             str,
-            '<div class="prettyprint-anchor" data-slide-down="'+randomLink+'">see code</div>',
+            '<div class="prettyprint-anchor" data-slide-down="'+randomLink+'">see HTML code</div>',
             '<pre class="prettyprint prettyprint--with-anchor" id="'+randomLink+'">',
             Handlebars.Utils.escapeExpression(str),
             '</pre>'

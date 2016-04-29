@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #BOX
+\*------------------------------------*/
+
+/**
+ * The box object simply boxes off content.
+ */
+
+
+.#{$inuit-box-namespace}box,
+%#{$inuit-box-namespace}box {
+
+     &--light-bg {
+         background-color: color(white);
+     }
+}

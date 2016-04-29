@@ -1,0 +1,27 @@
+
+<p>The tables object provides the following modifiers:</p>
+<ul>
+    
+</ul>
+<li><code>.table--fixed</code></li>
+<li><code>.table--compact</code></li>
+<li><code>.table--cosy</code></li>
+<li><code>.table--comfy</code></li>
+<li><code>.table--rows</code></li>
+<li><code>.table--columns</code></li>
+<li><code>.table--cells</code></li>
+
+<code>.table--fixed</code> forces each column of the table to have equal widths.
+
+<p></p><code>.table--compact</code> , <code>.table--cosy</code>  and <code>.table--comfy</code> all vary the spacing inside the table cells. Each one has its own dedicated variable to control that spacing:</p>
+<pre class="prettyprint">
+$inuit-table-padding--compact:  quarter($inuit-base-spacing-unit) !default;
+$inuit-table-padding--cosy:     halve($inuit-base-spacing-unit) !default;
+$inuit-table-padding--comfy:    $inuit-base-spacing-unit !default;
+</pre>
+
+<p><code>.table--rows</code> highlights the table rows by assigning a horizontal border to each <code><tr></code>.</p>
+
+<p><code>.table--columns</code> highlights the table columns by assigning a vertical border to each <code><td></code>.</p>
+
+<p><code>.table--cells</code> borders everything.</p>

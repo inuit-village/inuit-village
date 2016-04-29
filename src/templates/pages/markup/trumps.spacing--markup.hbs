@@ -1,0 +1,57 @@
+<pre class="prettyprint">
+    {{#html2txt}}
+<div class="u-mb+ up--">
+    ...
+</div>
+    {{/html2txt}}
+</pre>
+
+
+<h3>Naming</h3>
+<p>There are two basic variations of classes:</p>
+<ul>
+    <li><code>.u-m</code> for margins</li>
+    <li><code>.u-p</code> for paddings</li>
+</ul>
+<p>These classes would do:</p>
+<pre class="prettyprint">
+.u-m {
+    margin: $inuit-base-spacing-unit;
+}
+
+.u-p {
+    padding: $inuit-base-spacing-unit;
+}
+</pre>
+
+<h3>Specific Directions</h3>
+<p>If you want to assign margins/paddings just for specific directions, you've got to specify the classes
+    furthermore:</p>
+<ul>
+    <li><code>u-mt</code> for margin-top
+    <li><code>u-mr</code> for margin-right
+    <li><code>u-mb</code> for margin-bottom
+    <li><code>u-ml</code> for margin-left
+    <li><code>u-mv</code> for margin-top and margin-bottom
+    <li><code>u-mh</code> for margin-left and margin-right
+</ul>
+<p>And just as well for the padding classes.</p>
+
+<h3>Sizes</h3>
+<p>Each particular class above has always one specific value of margin/padding (default is </code>
+    $inuit-base-spacing-unit</code>). You can control the amount of spacing by assigning different classes:</p>
+<ul>
+    <li><code>u-pb--</code> for padding-bottom with a tiny spacing</li>
+    <li><code>u-pl-</code> for padding-left with a small spacing</li>
+    <li><code>u-pt+</code> for padding-top with a large spacing</li>
+    <li><code>u-pr++</code> for padding-right with a huge spacing</li>
+    <li><code>u-pb0</code> for resetting padding-bottom to <code>0</code></li>
+</ul>
+<p>And just as well for the margin classes.</p>
+
+<h3>Negative margins</h3>
+<p>For margins there is also the ability of assigning negative spacings:</p>
+<ul>
+    <li><code>u--ml++</code> will set a huge negative margin to the left</li>
+    <li><code>u--mb-</code> will set a small negative margin to the bottom</li>
+</ul>

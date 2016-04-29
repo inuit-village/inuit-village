@@ -1,0 +1,38 @@
+
+<pre class="prettyprint">
+$inuit-btn-namespace:       $inuit-namespace !default;
+</pre>
+
+<p>You can alter the size of <code>.btn</code> with the <code>$inuit-btn-padding</code> varaible.</p>
+<pre class="prettyprint">
+$inuit-btn-padding:         halve($inuit-base-spacing-unit) !default;
+$inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
+$inuit-btn-padding--large:  double($inuit-btn-padding) !default;
+</pre>
+
+
+<p>Furthermore you can change the basic theming of <code>.btn</code>:</p>
+<pre class="prettyprint">
+$inuit-btn-background:      #4a8ec2 !default;
+$inuit-btn-color:           #fff !default;
+$inuit-btn-border-width:    1px !default;
+$inuit-btn-border-style:    solid !default;
+$inuit-btn-border-color:    $inuit-btn-background !default;
+$inuit-btn-radius:          0 !default;
+</pre>
+
+
+<p>Enable modifiers</p>
+<pre class="prettyprint">
+$inuit-enable-btn--small:   false !default;
+$inuit-enable-btn--large:   false !default;
+$inuit-enable-btn--full:    false !default;
+$inuit-enable-btn--pill:    false !default;
+</pre>
+
+<pre class="prettyprint">
+// Here we set a variable assuming that `box-sizing: border-box;` is not set
+// globally. If it has been previously been defined, the following variable will
+// be overriden and will be set to `true`.
+$inuit-global-border-box: false !default;
+</pre>

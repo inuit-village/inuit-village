@@ -1,0 +1,59 @@
+<h3>High-level base settings:</h3>
+
+<ul>
+    <li>
+        The <code>$inuit-base-font-size</code> will be the font-size of your normal continuous text paragraphs.
+        Look out for normal paragraphs and assign its font-size here.
+    </li>
+    <li>
+        <code>$inuit-base-line-height</code> will in the best case be your <code>$inuit-base-font-size</code>*1.5.
+        <strong>It is wise to keep this an even number.</strong>
+    </li>
+    <li>
+        <code>$inuit-base-text-color</code> assigns the text-color to every element.
+    </li>
+    <li>
+        <code>$inuit-base-background-color</code> assigns the background-color to the html element.
+    </li>
+</ul>
+
+<pre class="prettyprint">
+
+// High-level base settings.
+$inuit-base-font-size:          16px !default;
+$inuit-base-line-height:        24px !default;
+$inuit-base-text-color:         #333 !default;
+$inuit-base-background-color:   #fff !default;
+
+</pre>
+
+
+<h3>Namespace:</h3>
+<ul>
+
+    <li>
+        <code>$inuit-namespace</code> you can assign a prefix to every class (i.e. all the objects) following in the
+        framework.
+    </li>
+</ul>
+
+<pre class="prettyprint">
+    // Namespace.
+    $inuit-namespace:               null !default;
+</pre>
+
+
+
+<h3>Inuit spacing-units:</h3>
+<ul>
+    <li>Use these variables throughout your project, but <strong>do not</strong> reassign them.</li>
+</ul>
+
+<pre class="prettyprint">
+    // Do not change these!
+    $inuit-base-spacing-unit:           $inuit-base-line-height;
+    $inuit-base-spacing-unit--tiny:     round($inuit-base-spacing-unit / 4);
+    $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
+    $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
+    $inuit-base-spacing-unit--huge:     round($inuit-base-spacing-unit * 4);
+</pre>

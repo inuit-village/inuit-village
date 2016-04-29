@@ -1,0 +1,18 @@
+
+<p>The list-block object provides the following modifiers:</p>
+<ul>
+    
+<li><code>list-block--tiny</code></li>
+<li><code>list-block--small</code></li>
+<li><code>list-block--large</code></li>
+<li><code>list-block--huge</code></li>
+</ul>
+
+<p><code>.list-block--tiny</code>, <code>.list-block--small</code>, <code>.list-block--large</code>, <code>.list-block--huge</code> all vary the padding for <code>.list-block__item</code>. Each one has its own dedicated variable to control that spacing:</p>
+
+<pre class="prettyprint">
+$inuit-list-block-padding--tiny: quarter($inuit-list-block-padding) !default;
+$inuit-list-block-padding--small: halve($inuit-list-block-padding) !default;
+$inuit-list-block-padding--large: double($inuit-list-block-padding) !default;
+$inuit-list-block-padding--huge: quadruple($inuit-flag-gutter) !default;
+</pre>

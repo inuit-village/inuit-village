@@ -1,0 +1,27 @@
+---
+title: "_tools.colors.scss"
+source: "https://github.com/a73-inuit/tools.z-index/blob/master/_tools.z-index.scss"
+author: "Rodrigo Erades"
+author_url: "https://github.com/area73"
+required: false
+dependences: [
+    {name: "z-index settings", url: "settings.z-index.html"},
+]
+usages: []
+version: 0.1.0
+package_name: "a73-inuit-z-index-tools"
+---
+
+<p>handy function to setup z-index by name, if no schena is used then it will use the one from <a href="settings.z-index.html">z-index settings</a></p>
+
+<pre class="prettyprint">
+
+@function z-index($name, $schema:$z-index-map) {
+    @if map-has-key($schema, $name) {
+        @return map-get($schema, $name);
+    } @else {
+        @warn "The value #{$name} is not in the map '$z-index--map'";
+        @return null;
+    }
+};
+</pre>

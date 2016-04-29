@@ -1,0 +1,106 @@
+/*------------------------------------*\
+    #PAGE-HEAD
+\*------------------------------------*/
+
+// The header of the page.
+.page-head {
+    background-color: $brand-color;
+    z-index: z-index(offcanvas);
+
+    // elements
+    // --------
+    &__title {
+        /**/
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        font-size: 250%;
+        color: rgba($color--neutral, 0.7);
+        text-decoration: none;
+        &:hover {
+            color: $color--neutral;
+        }
+    }
+
+    &__logo {
+       //  height: 300px;
+    }
+
+    // modifiers
+    // ---------
+    &--sticky {
+        position: fixed;
+        width: 100%;
+        height: 175px;
+        padding-top: 20px;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+        .page-head__logo {
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            margin-top: 10px;
+            // transform: scale(1,1);
+
+        }
+    }
+
+    &--sticky-active {
+        background-color: rgba($brand-color, 0.8);
+        padding-top: 10px;
+        height: 80px;
+        // elements
+        // --------
+        .page-head__link {
+            font-size: 80%;
+        }
+
+        .page-head__logo {
+            margin-top: 0px;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            transform-origin: top right;
+            transform: scale(0.3,0.3);
+
+        }
+
+    }
+}
+
+/*
+@include media-query(portable){
+    margin-left:  -$su--small;
+    margin-right: -$su--small;
+
+};
+*/
+
+
+@include media-query(palm){
+    .page-head {
+        &__link {
+            font-size: 150%;
+        }
+    }
+}
+
+
+@include media-query(lap){
+    .page-head {
+
+        &__title {
+            margin-top: 20px;
+        }
+        &__link {
+            font-size: 170%;
+        }
+
+        &--sticky-active {
+            .page-head__title {
+                margin-top: 0px;
+            }
+        }
+    }
+}

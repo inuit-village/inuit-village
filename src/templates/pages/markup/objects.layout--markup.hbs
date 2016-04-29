@@ -1,0 +1,33 @@
+
+<p>As Inuit.css grids are positioned using <code>display: inline-block;</code>, you must strip whitespace from between <code>.layout__item</code> elements to get the grids to properly line up.<br>
+<strong>Or use </strong> one of these solutions:</p>
+<p><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements" target="_blank">https://css-tricks.com/fighting-the-space-between-inline-block-elements</a></p>
+<p>I personally use this solution:</p>
+<pre class="prettyprint">
+layout {
+    letter-spacing: -.325rem;
+    // -------
+    // Element
+    // -------
+    &__item {
+        letter-spacing: normal;
+    }
+</pre>
+
+<pre class="prettyprint">
+    {{#html2txt}}
+<div class="layout">
+    <div class="layout__item   u-1/3">
+        Foo
+    </div>
+    <div class="layout__item  u-1/3">
+        Bar
+    </div>
+    <div class="layout__item  u-1/3">
+        Baz
+    </div>
+</div>
+    {{/html2txt}}
+</pre>
+
+

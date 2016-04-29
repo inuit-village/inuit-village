@@ -1,0 +1,25 @@
+
+<p>You can apply this mixin as follows:</p>
+<pre class="prettyprint">
+.teaser{
+    padding: $inuit-base-spacing-unit;
+
+    @include media-query(palm) {
+        padding: $inuit-base-spacing-unit--small;
+    }
+
+}
+</pre>
+
+<p>Output:</p>
+<pre class="prettyprint">
+.teaser {
+    padding: 28px;
+}
+
+@media screen and (max-width: 719px) {
+    .teaser {
+        padding: 14px;
+    }
+}
+</pre>

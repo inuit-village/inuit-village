@@ -1,32 +1,24 @@
 ---
 title: "_tools.responsive.scss"
 source: "https://github.com/inuitcss/tools.responsive/blob/master/_tools.responsive.scss"
-prev: "tools.mixins"
-next: "base.headings"
+
+author: "Harry Roberts"
+author_url: "https://github.com/csswizardry"
+
+package_name: "inuit-responsive-tools"
+version: "0.1.3"
+
+required: false
+dependences: [
+{name: "inuit-responsive-settings", url: "settings.responsive.html"},
+]
+usages: []
+tab_settings: "tools.responsive--settings"
 ---
-This module contains the media-query mixin. It takes the items of the list from [responsive settings](settings.responsive.html) for generating the equivalent media-queries.
+<p>This module contains the media-query mixin. It takes the items of the list from [responsive
+    settings](settings.responsive.html) for generating the equivalent media-queries.</p>
 
-You can apply this mixin as follows:
-```
-.teaser{
-    padding: $inuit-base-spacing-unit;
-
-    @include media-query(palm) {
-        padding: $inuit-base-spacing-unit--small;
-    }
-
-}
-```
-
-Output:
-```
-.teaser {
-    padding: 28px;
-}
-
-@media screen and (max-width: 719px) {
-    .teaser {
-        padding: 14px;
-    }
-}
-```
+<p>
+    A simple mixin to quickly generate whole media queries from the aliases and
+    conditions defined in <code>_settings.responsive.scss</code>.
+</p>

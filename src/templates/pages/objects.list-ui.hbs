@@ -1,47 +1,24 @@
 ---
 title: "_objects.list-ui.scss"
 source: "https://github.com/inuitcss/objects.list-ui/blob/master/_objects.list-ui.scss"
-demo: "list-ui"
-prev: "objects.list-block"
-next: "objects.tabs"
+
+author: "Harry Roberts"
+author_url: "https://github.com/csswizardry"
+required: false
+dependences: [
+    {name: "inuit-defaults", url: "settings.default.html"},
+    {name: "inuit-functions", url: "tools.functions.html"}
+]
+usages: []
+
+package_name: "inuit-list-ui"
+version: "0.4.1"
+
+tab_markup: "objects.list-ui--markup"
+tab_demo: "objects.list-ui--demo"
+tab_modifier: "objects.list-ui--modifier"
+tab_settings: "objects.list-ui--settings"
 ---
-The list-ui object is a quasi extension of the [list-block](objects.list-block.html) object. It is as blocky as `.list-block` but introduces a visual division between the list-items via a border between them.
 
-### Markup
-```html
-<ul class="list-ui">
-    <li class="list-ui__item">Foo</li>
-    <li class="list-ui__item">Bar</li>
-    <li class="list-ui__item">Baz</li>
-</ul>
-```
+<p>The list-ui object is a quasi extension of the [list-block](objects.list-block.html) object. It is as blocky as <code>.list-block</code> but introduces a visual division between the list-items via a border between them.</p>
 
-### Settings
-You can alter the padding of each `.list-ui__item` with the `$inuit-list-ui-padding` variable:
-```scss
-$inuit-list-ui-padding:    $inuit-base-spacing-unit*2;
-```
-
-Furthermore you can modify the style of the border between the list-items:
-```scss
-$inuit-list-ui-border-width:    1px !default;
-$inuit-list-ui-border-style:    solid !default;
-$inuit-list-ui-border-color:    #ccc !default;
-```
-
-### Modifiers
-The list-ui object provides the following modifiers:
-- `.list-ui--tiny`
-- `.list-ui--small`
-- `.list-ui--large`
-- `.list-ui--huge`
-
-`.list-ui--tiny`, `.list-ui--small`, `.list-ui--large`, `.list-ui--huge` all vary the padding for `.list-ui__item`. Each one has its own dedicated variable to control that spacing:
-```scss
-$inuit-list-ui-padding--tiny: quarter($inuit-list-ui-padding) !default;
-$inuit-list-ui-padding--small: halve($inuit-list-ui-padding) !default;
-$inuit-list-ui-padding--large: double($inuit-list-ui-padding) !default;
-$inuit-list-ui-padding--huge: quadruple($inuit-flag-gutter) !default;
-```
-
-### [Demo](list-ui.html)

@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #FLAG
+\*------------------------------------*/
+
+/**
+ * The flag object is a design pattern similar to the media object, however it
+ * utilises `display: table[-cell];` to give us control over the vertical
+ * alignments of the text and image. csswizardry.com/2013/05/the-flag-object
+ */
+
+.#{$inuit-flag-namespace}flag,
+%#{$inuit-flag-namespace}flag {
+    // Elements
+    &__img {
+
+    }
+
+    &__body {
+
+    }
+}

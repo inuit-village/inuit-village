@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #LIST-BARE
+\*------------------------------------*/
+
+/**
+ * The list-bare object simply removes any indents and bullet points from lists.
+ */
+
+
+
+.#{$inuit-list-bare-namespace}list-bare,
+%#{$inuit-list-bare-namespace}list-bare {
+
+}

@@ -1,0 +1,26 @@
+<pre class="prettyprint">
+@function quarter($inuit-number) {
+@return round($inuit-number / 4);
+}
+
+@function halve($inuit-number) {
+@return round($inuit-number / 2);
+}
+
+@function double($inuit-number) {
+@return round($inuit-number * 2);
+}
+
+@function quadruple($inuit-number) {
+@return round($inuit-number * 4);
+}
+</pre>
+
+<p>You can use these functions all over your project to quarter, halve, double or quadruple all kinds of values. If you
+    want to double your <code>$inuit-base-spacing-unit--large</code> for example, you would do it this way:</p>
+
+<pre class="prettyprint">
+.teaser{
+    margin-bottom: double($inuit-base-spacing-unit--large);
+}
+</pre>

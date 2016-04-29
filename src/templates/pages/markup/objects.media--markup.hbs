@@ -1,0 +1,31 @@
+<h3>Markup</h3>
+
+<p>The basic markup will always be as follows:</p>
+<pre class="prettyprint">
+    {{#html2txt}}
+        <div class="media">
+        <img class="media__img" src="some-image.jpg">
+        <p class="media__body">Lorem ipsum dolor sit amet.</p>
+    </div>
+    {{/html2txt}}
+</pre>
+
+<p>
+    <code>.media__body</code> can be pretty much everything. You can even nest media objects into each other:</p>
+<pre class="prettyprint">
+    {{#html2txt}}
+        // Outer media object
+        <div class="media">
+            <img class="media__img" src="some-image.jpg">
+            <div class="media__body">
+                <p>Lorem ipsum dolor sit amet.</p>
+
+                // Inner media object
+                <div class="media">
+                    <img class="media__img" src="another-image.jpg">
+                    <p class="media__body">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+        </div>
+    {{/html2txt}}
+</pre>

@@ -1,0 +1,57 @@
+
+<div data-jquery-responsive-tab>
+    <ul>
+        {{#if tab_markup }}
+            <li>
+                <a href="#markup">Markup</a>
+            </li>
+        {{/if}}
+
+        {{#if tab_demo }}
+            <li>
+                <a href="#demo">Demo</a>
+            </li>
+        {{/if}}
+
+        {{#if tab_modifier }}
+            <li>
+                <a href="#modifiers">Modifiers</a>
+            </li>
+        {{/if}}
+
+        {{#if tab_settings }}
+            <li>
+                <a href="#settings">Settings</a>
+            </li>
+        {{/if}}
+    </ul>
+
+
+    {{#if tab_markup }}
+    <div id="markup">
+        {{> (lookup . 'tab_markup') }}
+      </div>
+    {{/if}}
+
+    {{#if tab_demo }}
+        <div id="demo">
+            {{> (lookup . 'tab_demo') }}
+        </div>
+    {{/if}}
+
+    {{#if tab_modifier }}
+      <div id="modifiers">
+          {{> (lookup . 'tab_modifier') }}
+      </div>
+    {{/if}}
+
+    {{#if tab_settings }}
+        <div id="settings">
+
+
+                {{> (lookup . 'tab_settings') }}
+
+        </div>
+    {{/if}}
+</div>
+

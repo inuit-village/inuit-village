@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+
+// $inuit-layout-namespace:        $inuit-namespace;
+
+
+// This is related to object.layout
+
+// -----
+// BLOCK
+// -----
+
+.#{$inuit-layout-namespace}layout,
+%#{$inuit-layout-namespace}layout {
+    /* WARNING!: As Inuit.css grids are positioned using display: inline-block;
+    you must strip whitespace from between .layout__item elements to get the grids to properly line up.
+    OR USE one of these solutions:
+    https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+    We are using letter-spacing negative to block and then letter-spacing: normal to items
+    */
+    letter-spacing: -.325rem;
+    // margin-left: 0px;
+
+    // -------
+    // Element
+    // -------
+    &__item {
+        letter-spacing: normal;
+    }
+
+    // --------
+    // Modifier
+    // --------
+    &--legend {
+        margin-bottom: 24px;
+        .layout__item {
+            background-color: rgba(255,255,255,0.2);;
+            border: 1px solid #afafaf;
+            &:hover {
+                background-color: rgba(255,255,255,0.5);
+            }
+
+            &--required {
+                background-color: rgba(255,0,0,0.1);
+
+                &:hover {
+                    background-color: rgba(255,0,0,0.15);
+                }
+            }
+
+        }
+    }
+    &--outline {
+        margin-top: 20px;
+        border: 1px solid #afafaf;
+        background-color: rgba(255,255,255,0.2);
+        &:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .layout__item {
+            // background-color: #afafaf;
+        }
+    }
+}
+

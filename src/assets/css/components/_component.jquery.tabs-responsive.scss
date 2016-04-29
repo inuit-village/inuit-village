@@ -1,0 +1,37 @@
+.r-tabs {
+
+    .r-tabs-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .r-tabs-tab {
+        display: inline-block;
+        margin: 0;
+        list-style: none;
+    }
+
+    .r-tabs-panel {
+        padding: 15px;
+        display: none;
+        &.r-tabs-state-active {
+            display: block;
+        }
+    }
+
+    .r-tabs-accordion-title {
+        display: none;
+    }
+}
+
+/* Accordion responsive breakpoint */
+@include media-query(palm) {
+    .r-tabs {
+        .r-tabs-accordion-title {
+            display: block;
+        }
+        .r-tabs-nav {
+            display: none;
+        }
+    }
+}

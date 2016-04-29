@@ -1,25 +1,25 @@
 ---
 title: "_trumps.widths.scss"
 source: "https://github.com/inuitcss/trumps.widths/blob/master/_trumps.widths.scss"
-prev: "trumps.spacing-responsive"
-next: "trumps.widths-responsive"
+
+author: "Harry Roberts"
+author_url: "https://github.com/csswizardry"
+required: false
+dependences: [
+{name: "inuit-defaults", url: "settings.default.html"},
+{name: "inuit-tools-widths", url: "tools.widths.html"}
+]
+
+
+package_name: "inuit-widths"
+version: "0.4.2"
+
+
+usages: [
+]
+tab_markup: "trumps.widths--markup"
+tab_settings: "trumps.widths--settings"
 ---
-This module goes hand in hand with the [layout module](objects.layout.html). It serves for telling each `.layout__item` its width within the grid. As long as it's not `.layout--auto`, every `.layout__item` needs a width class.
-```html
-<div class="layout">
-    <div class="layout__item  u-1/3">
-        Foo
-    </div><!--
-
-    --><div class="layout__item  u-1/3">
-        Bar
-    </div><!--
-
-    --><div class="layout__item  u-1/3">
-        Baz
-    </div>
-</div>
-```
-Here, we are telling each `.layout__item` to take up a width of `1/3` (33.333%).
-
-By default inuitcss creates classes for wholes, halves, thirds, quarters and fifths. You can override the map defined in this module to add more classes.
+<p>This module goes hand in hand with the <a href="objects.layout.html">layout module</a>. It serves for telling each
+    <code>.layout__item</code> its width within the grid. As long as it's not <code>.layout--auto</code>, every <code>.layout__item</code>
+    needs a width class.</p>

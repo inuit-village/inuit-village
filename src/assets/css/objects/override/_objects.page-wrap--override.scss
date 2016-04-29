@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #PAGE-WRAP
+\*------------------------------------*/
+
+/**
+ * A main max-width page-wrapper.
+ */
+
+
+.#{$inuit-page-wrap-namespace}o-page-wrap {
+
+
+    &--main-w-sticky {
+        padding-top: 200px;
+    }
+}

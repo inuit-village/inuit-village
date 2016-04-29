@@ -1,0 +1,163 @@
+
+$tab-main-color: #ccc;
+$tab-main-color-dark: #666;
+
+
+/* Tabs container */
+.r-tabs {
+	position: relative;
+
+	// background-color: $tab-main-color;
+
+    /*
+	border-top: 1px solid $tab-main-color;
+	border-right: 1px solid $tab-main-color;
+	border-left: 1px solid $tab-main-color;
+	border-bottom: 4px solid $tab-main-color;
+	border-radius: 4px;
+    */
+    /* Tab element */
+    .r-tabs-nav {
+        margin-bottom: -1px;
+        .r-tabs-tab {
+            position: relative;
+            background-color: $tab-main-color;
+        }
+
+
+        .r-tabs-state-default {
+            color: red;
+        }
+
+        .r-tabs-anchor {
+            display: inline-block;
+            padding: 10px 12px;
+            text-decoration: none;
+            // text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+            // font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .r-tabs-state-disabled {
+            opacity: 0.5;
+        }
+
+        .r-tabs-state-active {
+            /* Active state tab anchor */
+            border: 1px solid $tab-main-color ;
+            border-bottom: 1px solid white;
+
+            .r-tabs-anchor {
+                color: $tab-main-color-dark;
+                background-color: white;
+                font-size: 200%;
+                padding: 1px 40px;
+                }
+
+        }
+    }
+    /* Tab panel */
+    .r-tabs-panel {
+        background-color: white;
+
+        border: 1px solid $tab-main-color;
+        padding: 40px;
+
+        // border-bottom-right-radius: 4px;
+        //border-bottom-left-radius: 4px;
+
+    }
+
+    /* Accordion anchor */
+    .r-tabs-accordion-title {
+
+
+
+        /* Active accordion anchor */
+        &.r-tabs-state-active {
+            .r-tabs-anchor {
+                background-color: #fff;
+                color: $tab-main-color;
+                text-shadow: none;
+            }
+        }
+
+
+
+        /* Disabled accordion button */
+        &.r-tabs-state-disabled {
+            opacity: 0.5;
+        }
+
+
+        .r-tabs-anchor {
+            display: block;
+            padding: 10px;
+
+            background-color: $tab-main-color;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+
+    }
+
+}
+
+
+
+
+/* Buttons */
+/*
+button {
+	display:inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px 20px;
+	line-height: 100%;
+
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	vertical-align: middle;
+	font-weight: bold;
+	
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: $tab-main-color;
+	box-shadow: 0px 3px 0px 0px #00ab94;
+	
+	cursor: pointer;
+}
+*/
+/* Info bar */
+/*
+.info {
+	display:inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px 20px;
+	width: 300px;
+	line-height: 100%;
+
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 14px;
+	color: $tab-main-color;
+	border: 2px solid #00ab94;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+
+	cursor: pointer;
+}
+*/

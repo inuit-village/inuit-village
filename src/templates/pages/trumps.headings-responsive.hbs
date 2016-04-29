@@ -1,0 +1,37 @@
+---
+title: "_trumps.headings.scss"
+source: "https://github.com/csshugs/trumps.headings-responsive/blob/master/_trumps.headings-responsive.scss"
+
+author: "Dennis Heibuelt"
+author_url: "https://github.com/csshugs"
+required: false
+
+
+package_name: "inuit-responsive-headings"
+version: "0.2.0"
+
+dependences: [
+{name: "inuit-defaults", url: "settings.default.html"},
+{name: "inuit-headings", url: "base.headings.html"},
+{name: "inuit-headings-trumps", url: "trumps.headings.html"},
+{name: "inuit-responsive-settings", url: "settings.responsive.html"},
+{name: "inuit-responsive-tools", url: "tools.responsive.html"},
+]
+
+
+---
+
+
+<p>A generator for responsive headings classes, changing their sizes depending on media-queries</p>
+
+<p>This module provides abstract classes for each heading-size accordig to
+    <a href="base.headings.html">base.headings</a></p>
+
+<p>Imagine, you've got a heading somewhere on your page with a <code>h1</code>-size, but it must not be an actual <code>h1</code>
+    (e.g. for SEO reasons). You can then do the following:</p>
+<pre class="prettyprint">
+    {{#html2txt}}
+        <h2 class="u-alpha-desk u-beta-lap u-gamma-palm">Lorem Ipsum</h2>
+    {{/html2txt}}
+</pre>
+

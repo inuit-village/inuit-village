@@ -1,0 +1,31 @@
+---
+title: "_tools.colors.scss"
+source: "https://github.com/a73-inuit/tools.colors/blob/master/_tools.colors.scss"
+author: "Rodrigo Erades"
+author_url: "https://github.com/area73"
+required: false
+dependences: [
+    {name: "color settings", url: "settings.colors.html"},
+]
+usages: []
+version: 0.1.0
+package_name: "a73-inuit-colors-tools"
+
+---
+
+<p>handy function to setup color by name and optionally give a color schema map and setup opacity</p>
+<p>If no color schema Map is defined on the functions params then it will use the one setup on <a href="settings.colors.html">color settings</a>
+<p>Also you can set color opacity (IE > 8 compatible)</p>
+
+<pre class="prettyprint">
+
+@function color($name, $opacity:1, $schema:$color-map) {
+    @if map-has-key($schema, $name) {
+        @return rgba(map-get($schema, $name),$opacity);
+    } @else {
+        @warn "The value #{$name} is not in the map '$schema'";
+    @return null;
+    }
+};
+
+</pre>
