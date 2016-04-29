@@ -27,4 +27,5 @@ bower_components/
 # Dist output
 dist/
 
-
+#gh-pages for web site
+gh-pages/
