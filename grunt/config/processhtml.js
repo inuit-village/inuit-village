@@ -4,15 +4,10 @@ module.exports = function (grunt, opt) {
             files: [
                 {
                     expand: true,
-                    cwd: "temp/parts",
-                    src: ["_page-head.hbs"],
-                    dest: "temp/parts"
-                },
-                {
-                    expand: true,
-                    cwd: "temp/layouts",
-                    src: ["./**/*.*"],
-                    dest: "temp/layouts"
+                    cwd: "<%= globalConfig.build %>",
+                    src: "*.html",
+                    dest:"<%= globalConfig.build %>"
+
                 }
             ]
         }

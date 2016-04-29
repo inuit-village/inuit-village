@@ -19,12 +19,6 @@ module.exports = function (grunt, opt) {
                     cwd: "src/assets/js",
                     src: ["./**/*.*"],
                     dest: "<%= globalConfig.build %>/assets/js"
-                },
-                {
-                    expand: true,
-                    cwd: "src/templates",
-                    src: ["./**/*.*"],
-                    dest: "temp"
                 }
             ]
         },

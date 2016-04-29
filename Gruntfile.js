@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     var globalConfig = {
         // Assets destinaion paths
         dev: 'dist', // Path to dev output (`grunt`)
-        build: 'build' // Path to build output (`grunt deploy`)
+        build: 'gh-pages' // Path to build output (`grunt deploy`) this path is the branch for github.io
     };
 
     var path = require('path');

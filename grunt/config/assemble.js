@@ -43,25 +43,18 @@ module.exports = function (grunt, opt) {
                 }
             ]
         },
-        // dev: {
-        //     files: {
-        //         "<%= globalConfig.dev %>/": ["src/templates/pages/**/*.hbs"]
-        //     }
-        // },
-        //
+
         build: {
-            options: {
-                layout: "default.hbs",
-                layoutdir: "temp/layouts",
-                assets: "<%= globalConfig.build %>/assets",
-                partials: [
-                    "temp/pages/*.hbs",
-                    "temp/parts/*.hbs"
-                ],
-            },
-            files: {
-                "<%= globalConfig.build %>": ["temp/pages/**/*.hbs"]
-            }
+            files: [
+                {
+                    expand: true,
+                    cwd: 'src/templates/pages/',
+                    src: '**/*.hbs',
+                    extDot: 'last',
+                    dest: '<%= globalConfig.build %>/',
+                    ext: '.html'
+                }
+            ]
         }
     }
 }

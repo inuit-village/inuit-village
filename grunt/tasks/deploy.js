@@ -6,12 +6,14 @@ module.exports = function (grunt) {
     // Deploy task, compressing the css and concatenating the js files
     grunt.registerTask('deploy', [
         'clean:build',
+
         'sass:build',
         'copy:deploy',
-        'processhtml',
         'assemble:build',
+        'processhtml',
+
         // 'autoprefixer',  --> now it's  grunt-postcss
-        'htmlmin',
-        'clean:temp'
+        //'htmlmin',
+        // 'clean:temp'
     ]);
 };

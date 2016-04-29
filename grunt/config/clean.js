@@ -7,13 +7,11 @@ module.exports = function (grunt, opt) {
         },
         build: {
             src: [
-                "<%= globalConfig.build %>"
-            ]
-        },
-        temp: {
-            src: [
-                "temp"
+                "<%= globalConfig.build %>/*",
+                "!<%= globalConfig.build %>/.git",
+
             ]
         }
+        
     }
 }
