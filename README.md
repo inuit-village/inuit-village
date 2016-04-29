@@ -27,6 +27,7 @@ It follows ITCSS phylosophy and best practice
     run npm install
     run bower install
     run grunt 
+    go to your local host  (http://localhost:8000) and enjoy !
 
 
 ## CREDITS
