@@ -1,4 +1,4 @@
-# Please visit : [inuitcss Village](http://area73.github.io/inuit-village/) for a better undertanding of this repo
+# Please visit : [inuitcss Village](http://inuit-village.github.io/inuit-village/) for a better undertanding of this repo
 
 
 This project provides a brief introduction to [inuitcss](https://github.com/inuitcss) by [Harry Roberts](https://github.com/csswizardry). 
