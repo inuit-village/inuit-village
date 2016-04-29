@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <title>Inuit Village</title>
+
+    <meta name="description"
+          content="inuit Vilage lists you all modules of inuitcss and helps you getting started with the framework.">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+
+    <!-- build:[href] src/assets/img/favicon.png -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png"/>
+    <!-- /build -->
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"
+            integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+            crossorigin="anonymous"></script>
+
+    <script src="assets/js/jquery.responsiveTabs.js"></script>
+
+    <script src="/assets/js/css-class.debugger.js"></script>
+
+    <script src="/assets/js/main.js"></script>
+    <!--
+    <script id="dsq-count-scr" src="//inuitvillage.disqus.com/count.js" async></script>
+    <a href="http://localhost:8000/trumps.push.html">link</a>
+    -->
+
+    <!-- build:css build/assets/css/style.css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- /build -->
+
+
+</head>
+<body>
+
+<a href="https://github.com/you">
+    <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2;"
+          src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+          alt="Fork me on GitHub"
+          data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+
+<header class=" page-head page-head--sticky">
+    <div class=" o-page-wrap  clearfix ">
+        <div class="layout">
+            <div class="layout__item u-2/3">
+                <h1 class=" page-head__title ">
+                    <a class="page-head__link" href="index.html">Inuit Village</a>
+                </h1>
+                <!-- <a class=" site-nav-trigger  u-float-right " href="#site-nav"></a> -->
+            </div>
+            <div class="layout__item u-1/3 ">
+                <img src="/assets/img/inuit-village2.png" class="page-head__logo u-float-right ">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<div class="o-page-wrap o-page-wrap--main-w-sticky u-mb+">
+    <h1 class="welcome"><span>W</span>elcome to our village</h1>
+    <div class="layout layout--auto">
+        <div class="layout__item">
+            <p class="gamma"><i>We have 57 Igloos and growing up !</i></p>
+        </div>
+        <div class="layout__item">
+            <p class="u-text-right"><a href="settings.colors.html">(Quick link to references)</a></p>
+        </div>
+    </div>
+
+
+    <div class="box box--large box--light-bg">
+        <h2>Table of Contents</h2>
+        <ul class="list-block list-block--small">
+            <li class="list-block__item">
+                <a href="#what-is-inuit-village">What is Inuit Village?</a>
+            </li>
+            <li class="list-block__item">
+                <a href="#best-practices">Best practices</a>
+                <ul class="list-block list-block--small">
+                    <li class="list-block__item"><a href="#inuitcss">InuitCSS</a></li>
+                    <li class="list-block__item"><a href="#itcss">ITCSS</a></li>
+                    <li class="list-block__item"><a href="#bem">B.E.M.</a></li>
+                    <li class="list-block__item"><a href="#sr">Single responsability principe</a></li>
+                    <li class="list-block__item"><a href="#sst">Single source of truth principe</a></li>
+                </ul>
+            </li>
+            <li class="list-block__item">
+                <a href="#how-to-use">How to use it</a>
+                <ul class="list-block list-block--small">
+                    <li class="list-block__item"><a href="#use-ref">As a reference</a></li>
+                    <li class="list-block__item"><a href="#use-for-proj">As a starting point for your project</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contribute">How to contribute</a>
+            </li>
+            <li>
+                <a href="#credits">Credits & acknowledments</a>
+            </li>
+            <li>
+                <a href="#links">Useful links</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <h2 class="u-mb0 u-mt+"><a name="what-is-inuit-village">What is Inuit Village?</a></h2>
+    <div class="box box--large box--light-bg">
+        <p>Inuit Village is intented to be a place to host all pices (as Harry says we can call
+            them "Igloos") of InuitCSS framework that follows Inuit Standars such us ITCSS, BEM, and others described
+            below in <a href="#best-practices">Best Practices</a> section.</p>
+        <p>The intention of this village is to have as much a as Inuit "Igloos" that may be around as long has they are
+            deliverd by bower (or npm)</p>
+        <p>As I said, it is not limited only to Harry Roberts elements and any body can contribute to the Village</p>
+        <p>For each component (object, generic,settings, etc) there is a documented page and in some cases there are
+            also
+            examples of use</p>
+        <p>With this github project and also web page you can always have a good reference of Inuit framework and a
+            quick gide to use it. You can download the project, fork it or just surf the web page to see what you can
+            achieve
+            with InuitCSS
+        </p>
+        <p>The project is intented to be as much as modularized as posible, in order to allow the developers to only
+            grab what they need, please see "how to use it" section to get a better undestanding</p>
+    </div>
+
+    <h2 class="u-mb0 u-mt+"><a name="best-practices">Best practices</a></h2>
+    <div class="box box--large box--light-bg">
+        <h3 class="u-mb0"><a name="inuitcss">InuitCSS</a></h3>
+        <div class="box">
+            <p>In <a target="_blank" href="https://github.com/csswizardry">Harry Robert's</a> own words:</p>
+            <p>inuit.css is a CSS framework. Another one. Except I like to think that inuit.css is a little different.
+                It’s
+                not a grid system, it’s not a boilerplate, it’s not a starting point, it’s a fully featured and
+                extensive
+                framework. It is designed to do 90% of the grunt work for you, it takes care of the boring bits that you
+                have to do on every build and leaves you enough time to concentrate fully on the fun bits.</p>
+
+
+            <h4 class="u-mb0">Pragmatic</h4>
+
+            <p>inuit.css is a pragmatic framework which uses lots of progressive enhancement. Rather than trying to be
+                everything to everyone it performs to its environment. IE7 works a treat, but Firefox 4 works even
+                better.
+                inuit.css takes a sensible approach to web development.</p>
+
+        </div>
+        <h3 class="u-mb0"><a name="itcss">ITCSS</a></h3>
+        <div class="box">
+            <p>In <a target="_blank" href="https://github.com/csswizardry">Harry Robert's</a> own words:</p>
+            <p>ITCSS—which stands for Inverted Triangle CSS—is a fully managed CSS architecture. It's not a framework or
+                library;
+                there's nothing to download or install.</p>
+
+            <P>It's a collection of principles and metrics by which developers should group and order their CSS in order
+                to
+                keep
+                it
+                scalable, terse, logical, and manageable.</P>
+
+            <p>It's very specifically opinionated in that it gives definite rules and guidelines for your source order
+                and
+                groupings, but it leaves decisions about naming conventions and preprocessors etc. up to you. This means
+                that,
+                although ideally suited to larger projects, ITCSS can be used on builds of all shapes and sizes.</p>
+
+
+            <p>One of the key principles of ITCSS is that it separates your CSS codebase to several sections (called
+                layers),
+                which take form of the inverted triangle:</p>
+            <div class="layout">
+                <div class="layout__item u-1/2 u-1/1-palm layout--flush">
+                    <img src="assets/img/itcss.png">
+                </div>
+                <div class="layout__item u-1/2 u-1/1-palm">
+                    <img src="assets/img/itcss-key-metrics.svg">
+                </div>
+            </div>
+
+
+            <p>These layers are as follows:</p>
+            <ul>
+                <li><strong>Settings</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
+                <li><strong>Tools</strong> – globally used mixins and functions. It’s important not to output any CSS in
+                    the
+                    <strong>first 2 layers</strong>.
+                </li>
+                <li><strong>Generic</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the
+                    first
+                    layer which generates actual CSS.
+                </li>
+                <li><strong>Base</strong> – styling for bare HTML elements (like H1, A, etc.). These come with default
+                    styling
+                    from the browser so we can redefine them here.
+                </li>
+                <li><strong>Objects</strong> – class-based selectors which define undecorated design patterns, for
+                    example
+                    media
+                    object known from OOCSS
+                </li>
+                <li><strong>Components</strong> – specific UI components. This is where majority of our work takes place
+                    and
+                    our
+                    UI components are often composed of Objects and Components
+                </li>
+                <li><strong>Trumps</strong> – utilities and helper classes with ability to override anything which goes
+                    before
+                    in the triangle, eg. hide helper class
+                </li>
+            </ul>
+
+
+            <p>The triangle also shows how styles represented by selectors are ordered in the resulting CSS: from
+                generic
+                styles
+                to explicit ones, from low-specificity selectors to more specific ones (but still not too specific, IDs
+                are
+                not
+                allowed) and from far reaching to localized ones.</p>
+        </div>
+
+        <h3 class="u-mb0"><a name="bem">B.E.M.</a></h3>
+        <div class="box">
+            <p>BEM is an abbreviation of three entities: a Block, an Element and a Modifier. BEM is a methodology of web
+                projects development, that allows you to divide an interface into logically independent blocks.</p>
+            <p>We are using BEM to name our CSS class and consecuently named in the HTML</p>
+            <h4 class="u-mb0">BLOCK</h4>
+            <p>Standalone entity that is meaningful on its own.</p>
+            <p>A Block will be the component itself named in lower case to delimit separate words with a hyphen (-)
+                character.
+            <p>
+            <h4 class="u-mb0">ELEMENTS</h4>
+            <p>Parts of a block and have no standalone meaning. They are semantically tied to its block.</p>
+            <p>An Element will be the union of the block name and double Underscore "__" follow by a reperesentative
+                name</p>
+            <h4 class="u-mb0">MODIFIER</h4>
+            <p>Flags on blocks or elements. Use them to change appearance or behavior.</p>
+            <p>A Modifier will be the name of the block or an element folllow by doble hyphen (--) and a reperesentative
+                name</p>
+            <p>Here is an example of using BEM in HTML and CSS</p>
+    <pre class="prettyprint">
+            &lt;!-- A represntation of a media Block that contains an image an a text--&gt;
+            &lt;&lt;div class=&quot;media media--large&quot;&gt;
+                &lt;img class=&quot;media__img&quot; src=&quot;http://placehold.it/200x150/dddddd/4a8ec2&quot;&gt;
+                &lt;p class=&quot;media__body&quot;&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+            &lt;/div&gt;
+    </pre>
+
+    <pre class="prettyprint">
+        .media {display: block;}
+
+        .media__img {
+            float: left;
+            margin-right: 28px;
+        }
+
+        .media__body {
+            overflow: hidden;
+            display: block;
+        }
+
+        .media--large {padding:20px;}
+
+        .media--large > .media__img {
+            margin-right: 56px;
+        }
+    </pre>
+        </div>
+        <h3 class="u-mb0"><a name="sr">Single responsability principe</a></h3>
+        <div class="box">
+
+            <p>The term was introduced by <a target="_blank" href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin"
+                                             title="Robert Cecil Martin">Robert C.
+                Martin</a> in an article by the same name as part of his <i>Principles of Object Oriented Design</i>
+                made
+                popular by his book <i>Agile
+                    Software Development, Principles, Patterns, and Practices</i>.</p>
+
+            <p>The single responsibility principle states that every module or class should have responsibility over a
+                single part of the functionality provided by the software, and that responsibility should be entirely
+                encapsulated by the class. All its services should be narrowly aligned with that responsibility.</p>
+            <p>In other words this principle states that everything you create should be created for a single,
+                focused reason. The styles you apply to a given selector should be created for a single purpose, and
+                should
+                do that single purpose extremely well.</p>
+            <p>This doesn’t mean you should have individual classes for padding-10, font-size-20, and color-green. The
+                single purpose we’re talking about is not the styles that they apply, but rather where the styles are
+                applied</p>
+        </div>
+
+        <h3 class="u-mb0"><a name="sst">Single source of truth principe</a></h3>
+
+        <div class="box">
+            <p>The single source of truth approach takes the single responsibility theory to the next level in that not
+                only is a class created for a single purpose, but also the styles applied to that class come from one
+                single
+                source. In a modular design, the design of any component must be determined by the component itself, and
+                never imposed on it by a parent class.</p>
+        </div>
+    </div>
+
+    <h2 class="u-mb0 u-mt+"><a name="how-to-use">How to use it</a></h2>
+    <div class="box box--light-bg box--large">
+        <h3 class="u-mb0"><a name="use-ref">As a reference</a></h3>
+        <div class="box">
+            <p> You can navigate on the web to search for reference of the INUIT Elements</p>
+            <p>Here you can have direct acces to each element</p>
+            <div class="u-mb"><nav role="navigation">
+    <ul id="site-nav-footer" class=" site-nav  layout portable-p- ">
+        <li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">settings</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="settings.colors.html">colors</a></li>
+                    <li><a href="settings.default.html">default</a></li>
+                    <li><a href="settings.responsive.html">responsive</a></li>
+                    <li><a href="settings.z-index.html">z-index</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">tools</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="tools.colors.html">colors</a></li>
+                    <li><a href="tools.functions.html">functions</a></li>
+                    <li><a href="tools.mixins.html">mixins</a></li>
+                    <li><a href="tools.pull.html">pull</a></li>
+                    <li><a href="tools.push.html">push</a></li>
+                    <li><a href="tools.responsive.html">responsive</a></li>
+                    <li><a href="tools.widths.html">widths</a></li>
+                    <li><a href="tools.z-index.html">z-index</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">generic</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="generic.box-sizing.html">box-sizing</a></li>
+                    <li><a href="generic.normalize.html">normalize</a></li>
+                    <li><a href="generic.reset.html">reset</a></li>
+                    <li><a href="generic.shared.html">shared</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">base</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="base.headings.html">headings</a></li>
+                    <li><a href="base.images.html">images</a></li>
+                    <li><a href="base.lists.html">lists</a></li>
+                    <li><a href="base.page.html">page</a></li>
+                    <li><a href="base.paragraphs.html">paragraphs</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">objects</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="objects.block.html">block</a></li>
+                    <li><a href="objects.box.html">box</a></li>
+                    <li><a href="objects.buttons.html">buttons</a></li>
+                    <li><a href="objects.flag.html">flag</a></li>
+                    <li><a href="objects.layout.html">layout</a></li>
+                    <li><a href="objects.list-bare.html">list-bare</a></li>
+                    <li><a href="objects.list-block.html">list-block</a></li>
+                    <li><a href="objects.list-inline.html">list-inline</a></li>
+                    <li><a href="objects.list-ui.html">list-ui</a></li>
+                    <li><a href="objects.media.html">media</a></li>
+                    <li><a href="objects.pack.html">pack</a></li>
+                    <li><a href="objects.page-wrap.html">page-wrap</a></li>
+                    <li><a href="objects.tables.html">tables</a></li>
+                    <li><a href="objects.tabs.html">tabs</a></li>
+                    <li><a href="objects.text-input.html">text-input</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">trumps</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="trumps.clearfix.html">clearfix</a></li>
+                    <li><a href="trumps.float.html">float</a></li>
+                    <li><a href="trumps.float-responsive.html">float-responsive</a></li>
+                    <li><a href="trumps.font-weight.html">font-weight</a></li>
+                    <li><a href="trumps.font-weight-responsive.html">font-weight-responsive</a></li>
+                    <li><a href="trumps.headings.html">headings</a></li>
+                    <li><a href="trumps.headings-responsive.html">headings-responsive</a></li>
+                    <li><a href="trumps.hide.html">hide</a></li>
+                    <li><a href="trumps.print.html">print</a></li>
+                    <li><a href="trumps.pull.html">pull</a></li>
+                    <li><a href="trumps.pull-responsive.html">pull-responsive</a></li>
+                    <li><a href="trumps.push.html">push</a></li>
+                    <li><a href="trumps.push-responsive.html">push-responsive</a></li>
+                    <li><a href="trumps.spacing.html">spacing</a></li>
+                    <li><a href="trumps.spacing-responsive.html">spacing-responsive</a></li>
+                    <li><a href="trumps.text-align.html">text-align</a></li>
+                    <li><a href="trumps.text-align-responsive.html">text-align-responsive</a></li>
+                    <li><a href="trumps.widths.html">widths</a></li>
+                    <li><a href="trumps.widths-responsive.html">widths-responsive</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+        </div>
+        <h3 class="u-mb0"><a name="use-for-proj">As a starting point for your project</a></h3>
+        <div class="box">
+            <p>If ypu download the source code, you will be able to see that every thing is setup as modular in order to
+                grab only what it is interest for you.</p>
+            <p>If you open style.scss , you will see that every "Igloo" is setup in its layer and also you can spec to
+                have two other files for each Igloo.<br> These two files are a settings modifier that has to be
+                reference
+                before the bower component and is meant to contain all variables that can be change in the bower/npm
+                component, and a override modifier that extends the component by overriding or
+                extendings their initial values</p>
+            <p><strong>NOTE:</strong> Not all Igloos have variables to setup , there for they may not have a --setup
+                file, and also some other igloos that have no html representation (specially igloose that lays on
+                settings and tools layers) will not need of a --override file</p>
+            <p>here is an example of the "media" object</p>
+<pre class="prettyprint">
+
+// ************************************
+// ******* #OBJECTS *******
+// ************************************
+
+// for every igloo you can spect to have as much as 2 other files
+
+// a file that contains media setting like : $inuit-enable-media--tiny: true;
+@import "objects/setup/_objects.media--setup";
+// ......................
+// bower component
+@import "bower_component/inuit-media/_objects.media";
+// ............................
+// just in case we need to add more stuff to that Igloo
+@import "objects/override/_objects.media--override";
+
+</pre>
+        </div>
+    </div>
+
+
+    <h2 class="u-mb0 u-mt+"><a name="contribute">How to contribute</a></h2>
+    <div class="box box--light-bg box--large">
+        <p>You can contribute in may ways:</p>
+        <ul>
+            <li>On every Igloo page at the bottom you have a coment system that you can use to make any comment or
+                sugestion that may be related to that component
+            </li>
+            <li>You can send me an email with new Igloos that you may find interesting</li>
+            <li>Also in parallel you can create a Bower/npm Igloo like the ones that are shown</li>
+            <li>You can fork this repo and add more igloos, make a pull request to populate our village</li>
+            <li>Feel free to open issues if you think something can be improve</li>
+        </ul>
+    </div>
+
+
+    <h2 class="u-mb0 u-mt+"><a name="credits">Credits & acknowledments</a></h2>
+    <div class="box box--light-bg box--large">
+        <p>All this work is base on InuitCSS framework made by <a target="_blank" href="https://github.com/csswizardry">Harry
+            Robets</a>, he is also the creator of ITCSS methodology</p>
+        <p>BEM methodology was invented at <a target="_blank" href="https://yandex.com/company/">Yandex</a></p>
+        <p> I want to give special thanks to <a href="https://github.com/csshugs">Dennis Heibült</a> and is initial
+            project <a href="http://csshugs.github.io/inuit-kitchen-sink/" target="_blank">inuit kitchen sink</a> which
+            as been for me a guide an a reference to make this Inuit Village</p>
+    </div>
+
+
+    <h2 class="u-mb0 u-mt+"><a name="links">Useful links</a></h2>
+    <div class="box box--light-bg box--large">
+        <ul>
+            <li><a target="_blank" href="https://twitter.com/csswizardry">https://twitter.com/csswizardry</a></li>
+            <li><a target="_blank" href="https://github.com/inuitcss">https://github.com/inuitcss</a></li>
+            <li><a target="_blank" href="http://cssguidelin.es/">CSS guideline (by Harry Roberts)</a></li>
+            <li><a target="_blank" href="http://getbem.com/">BEM</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<footer class=" page-foot u-pv+ ">
+
+    <div class="u-mb+ o-page-wrap  clearfix "><nav role="navigation">
+    <ul id="site-nav-footer" class=" site-nav site-nav--dark layout portable-p- ">
+        <li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">settings</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="settings.colors.html">colors</a></li>
+                    <li><a href="settings.default.html">default</a></li>
+                    <li><a href="settings.responsive.html">responsive</a></li>
+                    <li><a href="settings.z-index.html">z-index</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">tools</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="tools.colors.html">colors</a></li>
+                    <li><a href="tools.functions.html">functions</a></li>
+                    <li><a href="tools.mixins.html">mixins</a></li>
+                    <li><a href="tools.pull.html">pull</a></li>
+                    <li><a href="tools.push.html">push</a></li>
+                    <li><a href="tools.responsive.html">responsive</a></li>
+                    <li><a href="tools.widths.html">widths</a></li>
+                    <li><a href="tools.z-index.html">z-index</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">generic</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="generic.box-sizing.html">box-sizing</a></li>
+                    <li><a href="generic.normalize.html">normalize</a></li>
+                    <li><a href="generic.reset.html">reset</a></li>
+                    <li><a href="generic.shared.html">shared</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">base</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="base.headings.html">headings</a></li>
+                    <li><a href="base.images.html">images</a></li>
+                    <li><a href="base.lists.html">lists</a></li>
+                    <li><a href="base.page.html">page</a></li>
+                    <li><a href="base.paragraphs.html">paragraphs</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">objects</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="objects.block.html">block</a></li>
+                    <li><a href="objects.box.html">box</a></li>
+                    <li><a href="objects.buttons.html">buttons</a></li>
+                    <li><a href="objects.flag.html">flag</a></li>
+                    <li><a href="objects.layout.html">layout</a></li>
+                    <li><a href="objects.list-bare.html">list-bare</a></li>
+                    <li><a href="objects.list-block.html">list-block</a></li>
+                    <li><a href="objects.list-inline.html">list-inline</a></li>
+                    <li><a href="objects.list-ui.html">list-ui</a></li>
+                    <li><a href="objects.media.html">media</a></li>
+                    <li><a href="objects.pack.html">pack</a></li>
+                    <li><a href="objects.page-wrap.html">page-wrap</a></li>
+                    <li><a href="objects.tables.html">tables</a></li>
+                    <li><a href="objects.tabs.html">tabs</a></li>
+                    <li><a href="objects.text-input.html">text-input</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">trumps</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="trumps.clearfix.html">clearfix</a></li>
+                    <li><a href="trumps.float.html">float</a></li>
+                    <li><a href="trumps.float-responsive.html">float-responsive</a></li>
+                    <li><a href="trumps.font-weight.html">font-weight</a></li>
+                    <li><a href="trumps.font-weight-responsive.html">font-weight-responsive</a></li>
+                    <li><a href="trumps.headings.html">headings</a></li>
+                    <li><a href="trumps.headings-responsive.html">headings-responsive</a></li>
+                    <li><a href="trumps.hide.html">hide</a></li>
+                    <li><a href="trumps.print.html">print</a></li>
+                    <li><a href="trumps.pull.html">pull</a></li>
+                    <li><a href="trumps.pull-responsive.html">pull-responsive</a></li>
+                    <li><a href="trumps.push.html">push</a></li>
+                    <li><a href="trumps.push-responsive.html">push-responsive</a></li>
+                    <li><a href="trumps.spacing.html">spacing</a></li>
+                    <li><a href="trumps.spacing-responsive.html">spacing-responsive</a></li>
+                    <li><a href="trumps.text-align.html">text-align</a></li>
+                    <li><a href="trumps.text-align-responsive.html">text-align-responsive</a></li>
+                    <li><a href="trumps.widths.html">widths</a></li>
+                    <li><a href="trumps.widths-responsive.html">widths-responsive</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+</footer>
+
+
+<!-- build:remove -->
+<script type="text/javascript">document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+        + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+</script>
+<!-- /build -->
+</body>
+</html>

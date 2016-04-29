@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <title>inuit Village | _objects.layout.scss</title>
+
+    <meta name="description"
+          content="inuit Vilage lists you all modules of inuitcss and helps you getting started with the framework.">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+
+    <!-- build:[href] src/assets/img/favicon.png -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png"/>
+    <!-- /build -->
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"
+            integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+            crossorigin="anonymous"></script>
+
+    <script src="assets/js/jquery.responsiveTabs.js"></script>
+
+    <script src="/assets/js/css-class.debugger.js"></script>
+
+    <script src="/assets/js/main.js"></script>
+    <!--
+    <script id="dsq-count-scr" src="//inuitvillage.disqus.com/count.js" async></script>
+    <a href="http://localhost:8000/trumps.push.html">link</a>
+    -->
+
+    <!-- build:css build/assets/css/style.css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- /build -->
+
+
+</head>
+<body>
+
+<a href="https://github.com/you">
+    <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2;"
+          src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+          alt="Fork me on GitHub"
+          data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+
+<header class=" page-head page-head--sticky">
+    <div class=" o-page-wrap  clearfix ">
+        <div class="layout">
+            <div class="layout__item u-2/3">
+                <h1 class=" page-head__title ">
+                    <a class="page-head__link" href="index.html">Inuit Village</a>
+                </h1>
+                <!-- <a class=" site-nav-trigger  u-float-right " href="#site-nav"></a> -->
+            </div>
+            <div class="layout__item u-1/3 ">
+                <img src="/assets/img/inuit-village2.png" class="page-head__logo u-float-right ">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<div class="o-page-wrap o-page-wrap--main-w-sticky">
+    <div class=" layout  layout--rev">
+        <div class=" layout__item  u-4/5  u-1/1-portable  u-mb++ ">
+            <h1 class="u-mb0">_objects.layout.scss</h1>
+            <div class="layout layout--auto layout--legend layout--flush">
+            
+                    <div class="layout__item u-ph u-mr-- u-mt-- u-pv--">
+                        <h2 class="epsilon  u-m0">Source code</h2>
+                        <a class="" href="https://github.com/inuitcss/objects.layout/blob/master/_objects.layout.scss" target="_blank">View source</a>
+                    </div>
+            
+                    <div class="layout__item u-ph u-mr-- u-mt--  u-pv--">
+                        <h2 class="epsilon  u-m0">Author</h2>
+                            <a href="https://github.com/csswizardry" target="_blank">
+                                Harry Roberts
+                            </a>
+                    </div>
+            
+                    <div class="layout__item u-ph u-mr-- u-mt-- u-pv--">
+                        <h2 class="epsilon  u-m0">Package Name</h2>
+                        inuit-layout
+                    </div>
+            
+                    <div class="layout__item u-ph u-mr-- u-mt-- u-pv--">
+                        <h2 class="epsilon  u-m0">Version</h2>
+                        0.3.2
+                    </div>
+            
+            
+                    <div class="layout__item u-1/1 u-ph u-mr-- u-mt-- u-pv--">
+                        <h2 class="epsilon  u-m0">Dependences</h2>
+                        <ul>
+                                <li><a href="settings.default.html">inuit-defaults</a></li>
+                                <li><a href="tools.functions.html">inuit-functions</a></li>
+                        </ul>
+                        
+                        
+                        
+                    </div>
+            
+            
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+<p>The layout object is the basic grid system. It is used alongside with <a href="trumps.widths.html">trumps.widths</a> and <a href="trumps.widths-responsive.html">trumps.widths-responsive</a>.</p>
+
+
+            <div data-jquery-responsive-tab>
+    <ul>
+        <li>
+            <a href="#markup">Markup</a>
+        </li>
+        <li>
+            <a href="#demo">Demo</a>
+        </li>
+        <li>
+            <a href="#modifiers">Modifiers</a>
+        </li>
+        <li>
+            <a href="#settings">Settings</a>
+        </li>
+    </ul>
+    <div id="markup">
+        <p>As Inuit.css grids are positioned using <code>display: inline-block;</code>, you must strip whitespace from between <code>.layout__item</code> elements to get the grids to properly line up.
+            <br>
+            <strong>Or use </strong> one of these solutions:</p>
+        <p>
+            <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements" target="_blank">https://css-tricks.com/fighting-the-space-between-inline-block-elements</a>
+        </p>
+        <p>I personally use this solution:</p>
+        <pre class="prettyprint">
+        layout {
+            letter-spacing: -.325rem;
+            // -------
+            // Element
+            // -------
+            &__item {
+                letter-spacing: normal;
+            }
+        </pre>
+        <pre class="prettyprint">
+        &lt;div class=&quot;layout&quot;&gt;
+            &lt;div class=&quot;layout__item   u-1/3&quot;&gt;
+                Foo
+            &lt;/div&gt;
+            &lt;div class=&quot;layout__item  u-1/3&quot;&gt;
+                Bar
+            &lt;/div&gt;
+            &lt;div class=&quot;layout__item  u-1/3&quot;&gt;
+                Baz
+            &lt;/div&gt;
+        &lt;/div&gt;
+        </pre>
+    </div>
+    <div id="demo">
+        <code>.layout</code>
+        <div class="layout">
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-625">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-625">&lt;div class=&quot;layout&quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--tiny</code>
+        <div class=" layout  layout--tiny ">
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-566">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-566">&lt;div class=&quot; layout  layout--tiny &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--small</code>
+        <div class=" layout  layout--small ">
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-398">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-398">&lt;div class=&quot; layout  layout--small &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--large</code>
+        <div class=" layout  layout--large ">
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-778">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-778">&lt;div class=&quot; layout  layout--large &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--huge</code>
+        <div class=" layout  layout--huge ">
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-849">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-849">&lt;div class=&quot; layout  layout--huge &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--flush</code>
+        <div class=" layout  layout--flush ">
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>1/3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-767">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-767">&lt;div class=&quot; layout  layout--flush &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1/3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--rev</code>
+        <div class=" layout  layout--rev ">
+            <div class=" layout__item  u-1/3 ">
+                <p>1</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>2</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>3</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-387">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-387">&lt;div class=&quot; layout  layout--rev &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;1&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;2&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;3&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--middle</code>
+        <div class=" layout  layout--middle ">
+            <div class=" layout__item  u-1/3 ">
+                <p>Foo
+                    <br>Bar
+                    <br>Baz</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>Bar</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>Baz</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-405">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-405">&lt;div class=&quot; layout  layout--middle &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Foo &lt;br&gt; Bar &lt;br&gt; Baz&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Bar&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Baz&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--bottom</code>
+        <div class=" layout  layout--bottom ">
+            <div class=" layout__item  u-1/3 ">
+                <p>Foo
+                    <br>Bar
+                    <br>Baz</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>Bar</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>Baz</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-388">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-388">&lt;div class=&quot; layout  layout--bottom &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Foo &lt;br&gt; Bar &lt;br&gt; Baz&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Bar&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Baz&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--right</code>
+        <div class=" layout  layout--right ">
+            <div class=" layout__item  u-1/3 ">
+                <p>Foo</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>Bar</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-332">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-332">&lt;div class=&quot; layout  layout--right &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Foo&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Bar&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--center</code>
+        <div class=" layout  layout--center ">
+            <div class=" layout__item  u-1/3 ">
+                <p>Foo</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item  u-1/3 ">
+                <p>Bar</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-656">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-656">&lt;div class=&quot; layout  layout--center &quot;&gt;
+                &lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Foo&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item  u-1/3 &quot;&gt;
+                    &lt;p&gt;Bar&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        <hr>
+        <code>.layout--auto</code>
+        <div class=" layout  layout--auto ">
+            <div class=" layout__item ">
+                <p>Foo</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item ">
+                <p>Bar</p>
+            </div>
+
+            <!--
+                -->
+            <div class=" layout__item ">
+                <p>Baz</p>
+            </div>
+        </div>
+        <div class="prettyprint-anchor" data-slide-down="code-930">see HTML code</div><pre class="prettyprint prettyprint--with-anchor" id="code-930">&lt;div class=&quot; layout  layout--auto &quot;&gt;
+                &lt;div class=&quot; layout__item &quot;&gt;
+                    &lt;p&gt;Foo&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item &quot;&gt;
+                    &lt;p&gt;Bar&lt;/p&gt;
+                &lt;/div&gt;&lt;!--
+                --&gt;&lt;div class=&quot; layout__item &quot;&gt;
+                    &lt;p&gt;Baz&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre> 
+    </div>
+    <div id="modifiers">
+        <p>The layout object provides the following modifiers:</p>
+        <ul>
+            <li><code>.layout--tiny</code>
+            </li>
+            <li><code>.layout--small</code>
+            </li>
+            <li><code>.layout--large</code>
+            </li>
+            <li><code>.layout--huge</code>
+            </li>
+            <li><code>.layout--flush</code>
+            </li>
+            <li><code>.layout--rev</code>
+            </li>
+            <li><code>.layout--middle</code>
+            </li>
+            <li><code>.layout--bottom</code>
+            </li>
+            <li><code>.layout--right</code>
+            </li>
+            <li><code>.layout--center</code>
+            </li>
+            <li><code>.layout--auto</code>
+            </li>
+        </ul>
+        <p><code>.layout--tiny</code>, <code>.layout--small</code>, <code>.layout--large</code>, <code>.layout--huge</code> all vary the spacing between the layout-items. Each one has its own dedicated variable to control that spacing:</p>
+        <pre class="prettyprint">
+          $inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter) !default;
+          $inuit-layout-gutter--small:        halve($inuit-layout-gutter) !default;
+          $inuit-layout-gutter--large:       double($inuit-layout-gutter) !default;
+          $inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
+          </pre>
+        <p><code>.layout--flush</code> will eliminate the spacing completely.</p>
+        <p><code>.layout--rev</code> reverses the order of the layout-items.</p>
+        <p><code>.layout--middle</code> aligns the layout-items vertically.</p>
+        <p><code>.layout--bottom</code> aligns the layout-items on the bottom.</p>
+        <p><code>.layout--right</code> makes the layout-items fill up the <code>.layout</code> container from the right.
+            <strong>This just makes sense if a <code>.layout</code> row is not full-width, e.g.:</strong>
+        </p>
+        <pre class="prettyprint">
+          &lt;div class=&quot;layout  layout--right&quot;&gt;
+              &lt;div class=&quot;layout__item  u-1/3&quot;&gt;
+                  Foo
+              &lt;/div&gt;
+              &lt;div class=&quot;layout__item  u-1/3&quot;&gt;
+                  Bar
+              &lt;/div&gt;
+          &lt;/div&gt;
+          </pre>
+        <P><code>.layout--center</code> makes the layout-items fill up the <code>.layout</code> container from the center outward.
+            <strong>This also just makes sense if a <code>.layout</code> row is not full-width as above.</strong> (Check demo for clarification).
+        </P>
+        <p><code>.layout--auto</code> causes the layout-items to take up a non-explicit amount of width. <strong>It is critical
+              not to assign a width-class here!</strong>
+        </p>
+        <pre class="prettyprint">
+          &lt;div class=&quot;layout  layout--auto&quot;&gt;
+              &lt;div class=&quot;layout__item&quot;&gt;
+                  Foo
+              &lt;/div&gt;
+              &lt;div class=&quot;layout__item&quot;&gt;
+                  Bar
+              &lt;/div&gt;
+              &lt;div class=&quot;layout__item&quot;&gt;
+                  Baz
+              &lt;/div&gt;
+          &lt;/div&gt;
+          </pre>
+    </div>
+    <div id="settings">
+        <pre class="prettyprint">
+                // Predefine the variables below in order to alter and enable specific features.
+                $inuit-layout-namespace:        $inuit-namespace !default;
+                
+                $inuit-layout-gutter:           $inuit-base-spacing-unit !default;
+                $inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter) !default;
+                $inuit-layout-gutter--small:        halve($inuit-layout-gutter) !default;
+                $inuit-layout-gutter--large:       double($inuit-layout-gutter) !default;
+                $inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
+                
+                $inuit-enable-layout--tiny:     false !default;
+                $inuit-enable-layout--small:    false !default;
+                $inuit-enable-layout--large:    false !default;
+                $inuit-enable-layout--huge:     false !default;
+                $inuit-enable-layout--flush:    false !default;
+                $inuit-enable-layout--rev:      false !default;
+                $inuit-enable-layout--middle:   false !default;
+                $inuit-enable-layout--bottom:   false !default;
+                $inuit-enable-layout--right:    false !default;
+                $inuit-enable-layout--center:   false !default;
+                $inuit-enable-layout--auto:     false !default;
+                
+                // Here we set a variable assuming that `box-sizing: border-box;` is not set
+                // globally. If it has been previously been defined, the following variable will
+                // be overriden and will be set to `true`.
+                $inuit-global-border-box: false !default;
+                
+                </pre>
+    </div>
+</div>
+
+            <div id="disqus_thread" class="u-mt+"></div>
+            <script>
+                /**
+                 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                 */
+            
+                var disqus_config = function () {
+                    this.page.url = "http://"+location.href.replace(/https?:\/\//i, ""); // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = " _objects.layout.scss"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+            
+            
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+            
+                    s.src = '//inuitvillage.disqus.com/embed.js';
+            
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            
+        </div>
+        <div class=" layout__item  u-1/5  u-hide-portable ">
+            <nav role="navigation">
+                <ul id="site-nav" class=" site-nav layout list-bare portable-p- ">
+                        <li class=" layout__item u-1/3-portable  ">
+                            <p class=" gamma u-weight-700 u-mb0 ">settings</p>
+                            <ul class=" site-nav__sub list-bare u-mb ">
+                                    <li><a href="settings.colors.html">colors</a></li>
+                                    <li><a href="settings.default.html">default</a></li>
+                                    <li><a href="settings.responsive.html">responsive</a></li>
+                                    <li><a href="settings.z-index.html">z-index</a></li>
+                            </ul>
+                        </li>
+                        <li class=" layout__item u-1/3-portable  ">
+                            <p class=" gamma u-weight-700 u-mb0 ">tools</p>
+                            <ul class=" site-nav__sub list-bare u-mb ">
+                                    <li><a href="tools.colors.html">colors</a></li>
+                                    <li><a href="tools.functions.html">functions</a></li>
+                                    <li><a href="tools.mixins.html">mixins</a></li>
+                                    <li><a href="tools.pull.html">pull</a></li>
+                                    <li><a href="tools.push.html">push</a></li>
+                                    <li><a href="tools.responsive.html">responsive</a></li>
+                                    <li><a href="tools.widths.html">widths</a></li>
+                                    <li><a href="tools.z-index.html">z-index</a></li>
+                            </ul>
+                        </li>
+                        <li class=" layout__item u-1/3-portable  ">
+                            <p class=" gamma u-weight-700 u-mb0 ">generic</p>
+                            <ul class=" site-nav__sub list-bare u-mb ">
+                                    <li><a href="generic.box-sizing.html">box-sizing</a></li>
+                                    <li><a href="generic.normalize.html">normalize</a></li>
+                                    <li><a href="generic.reset.html">reset</a></li>
+                                    <li><a href="generic.shared.html">shared</a></li>
+                            </ul>
+                        </li>
+                        <li class=" layout__item u-1/3-portable  ">
+                            <p class=" gamma u-weight-700 u-mb0 ">base</p>
+                            <ul class=" site-nav__sub list-bare u-mb ">
+                                    <li><a href="base.headings.html">headings</a></li>
+                                    <li><a href="base.images.html">images</a></li>
+                                    <li><a href="base.lists.html">lists</a></li>
+                                    <li><a href="base.page.html">page</a></li>
+                                    <li><a href="base.paragraphs.html">paragraphs</a></li>
+                            </ul>
+                        </li>
+                        <li class=" layout__item u-1/3-portable  ">
+                            <p class=" gamma u-weight-700 u-mb0 ">objects</p>
+                            <ul class=" site-nav__sub list-bare u-mb ">
+                                    <li><a href="objects.block.html">block</a></li>
+                                    <li><a href="objects.box.html">box</a></li>
+                                    <li><a href="objects.buttons.html">buttons</a></li>
+                                    <li><a href="objects.flag.html">flag</a></li>
+                                    <li><a href="objects.layout.html">layout</a></li>
+                                    <li><a href="objects.list-bare.html">list-bare</a></li>
+                                    <li><a href="objects.list-block.html">list-block</a></li>
+                                    <li><a href="objects.list-inline.html">list-inline</a></li>
+                                    <li><a href="objects.list-ui.html">list-ui</a></li>
+                                    <li><a href="objects.media.html">media</a></li>
+                                    <li><a href="objects.pack.html">pack</a></li>
+                                    <li><a href="objects.page-wrap.html">page-wrap</a></li>
+                                    <li><a href="objects.tables.html">tables</a></li>
+                                    <li><a href="objects.tabs.html">tabs</a></li>
+                                    <li><a href="objects.text-input.html">text-input</a></li>
+                            </ul>
+                        </li>
+                        <li class=" layout__item u-1/3-portable  ">
+                            <p class=" gamma u-weight-700 u-mb0 ">trumps</p>
+                            <ul class=" site-nav__sub list-bare u-mb ">
+                                    <li><a href="trumps.clearfix.html">clearfix</a></li>
+                                    <li><a href="trumps.float.html">float</a></li>
+                                    <li><a href="trumps.float-responsive.html">float-responsive</a></li>
+                                    <li><a href="trumps.font-weight.html">font-weight</a></li>
+                                    <li><a href="trumps.font-weight-responsive.html">font-weight-responsive</a></li>
+                                    <li><a href="trumps.headings.html">headings</a></li>
+                                    <li><a href="trumps.headings-responsive.html">headings-responsive</a></li>
+                                    <li><a href="trumps.hide.html">hide</a></li>
+                                    <li><a href="trumps.print.html">print</a></li>
+                                    <li><a href="trumps.pull.html">pull</a></li>
+                                    <li><a href="trumps.pull-responsive.html">pull-responsive</a></li>
+                                    <li><a href="trumps.push.html">push</a></li>
+                                    <li><a href="trumps.push-responsive.html">push-responsive</a></li>
+                                    <li><a href="trumps.spacing.html">spacing</a></li>
+                                    <li><a href="trumps.spacing-responsive.html">spacing-responsive</a></li>
+                                    <li><a href="trumps.text-align.html">text-align</a></li>
+                                    <li><a href="trumps.text-align-responsive.html">text-align-responsive</a></li>
+                                    <li><a href="trumps.widths.html">widths</a></li>
+                                    <li><a href="trumps.widths-responsive.html">widths-responsive</a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<footer class=" page-foot u-pv+ ">
+
+    <div class="u-mb+ o-page-wrap  clearfix "><nav role="navigation">
+    <ul id="site-nav-footer" class=" site-nav site-nav--dark layout portable-p- ">
+        <li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">settings</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="settings.colors.html">colors</a></li>
+                    <li><a href="settings.default.html">default</a></li>
+                    <li><a href="settings.responsive.html">responsive</a></li>
+                    <li><a href="settings.z-index.html">z-index</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">tools</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="tools.colors.html">colors</a></li>
+                    <li><a href="tools.functions.html">functions</a></li>
+                    <li><a href="tools.mixins.html">mixins</a></li>
+                    <li><a href="tools.pull.html">pull</a></li>
+                    <li><a href="tools.push.html">push</a></li>
+                    <li><a href="tools.responsive.html">responsive</a></li>
+                    <li><a href="tools.widths.html">widths</a></li>
+                    <li><a href="tools.z-index.html">z-index</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">generic</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="generic.box-sizing.html">box-sizing</a></li>
+                    <li><a href="generic.normalize.html">normalize</a></li>
+                    <li><a href="generic.reset.html">reset</a></li>
+                    <li><a href="generic.shared.html">shared</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">base</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="base.headings.html">headings</a></li>
+                    <li><a href="base.images.html">images</a></li>
+                    <li><a href="base.lists.html">lists</a></li>
+                    <li><a href="base.page.html">page</a></li>
+                    <li><a href="base.paragraphs.html">paragraphs</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">objects</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="objects.block.html">block</a></li>
+                    <li><a href="objects.box.html">box</a></li>
+                    <li><a href="objects.buttons.html">buttons</a></li>
+                    <li><a href="objects.flag.html">flag</a></li>
+                    <li><a href="objects.layout.html">layout</a></li>
+                    <li><a href="objects.list-bare.html">list-bare</a></li>
+                    <li><a href="objects.list-block.html">list-block</a></li>
+                    <li><a href="objects.list-inline.html">list-inline</a></li>
+                    <li><a href="objects.list-ui.html">list-ui</a></li>
+                    <li><a href="objects.media.html">media</a></li>
+                    <li><a href="objects.pack.html">pack</a></li>
+                    <li><a href="objects.page-wrap.html">page-wrap</a></li>
+                    <li><a href="objects.tables.html">tables</a></li>
+                    <li><a href="objects.tabs.html">tabs</a></li>
+                    <li><a href="objects.text-input.html">text-input</a></li>
+            </ul>
+        </li><li class=" layout__item  u-1/6 u-1/3-portable ">
+            <p class=" gamma u-weight-700 u-mb0 ">trumps</p>
+            <ul class=" site-nav__sub list-bare u-mb ">
+                    <li><a href="trumps.clearfix.html">clearfix</a></li>
+                    <li><a href="trumps.float.html">float</a></li>
+                    <li><a href="trumps.float-responsive.html">float-responsive</a></li>
+                    <li><a href="trumps.font-weight.html">font-weight</a></li>
+                    <li><a href="trumps.font-weight-responsive.html">font-weight-responsive</a></li>
+                    <li><a href="trumps.headings.html">headings</a></li>
+                    <li><a href="trumps.headings-responsive.html">headings-responsive</a></li>
+                    <li><a href="trumps.hide.html">hide</a></li>
+                    <li><a href="trumps.print.html">print</a></li>
+                    <li><a href="trumps.pull.html">pull</a></li>
+                    <li><a href="trumps.pull-responsive.html">pull-responsive</a></li>
+                    <li><a href="trumps.push.html">push</a></li>
+                    <li><a href="trumps.push-responsive.html">push-responsive</a></li>
+                    <li><a href="trumps.spacing.html">spacing</a></li>
+                    <li><a href="trumps.spacing-responsive.html">spacing-responsive</a></li>
+                    <li><a href="trumps.text-align.html">text-align</a></li>
+                    <li><a href="trumps.text-align-responsive.html">text-align-responsive</a></li>
+                    <li><a href="trumps.widths.html">widths</a></li>
+                    <li><a href="trumps.widths-responsive.html">widths-responsive</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+</footer>
+
+
+<!-- build:remove -->
+<script type="text/javascript">document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+        + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+</script>
+<!-- /build -->
+</body>
+</html>
