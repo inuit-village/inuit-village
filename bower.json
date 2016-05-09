@@ -65,6 +65,10 @@
     "inuit-widths-responsive": "0.2.2",
     "responsive-tabs": "^1.6.0",
     "a73-inuit-colors-tools": "^0.1.0",
-    "a73-inuit-z-index-tools": "^0.1.0"
+    "a73-inuit-z-index-tools": "^0.1.0",
+    "a73-inuit-md-icon-objects": "^0.1.7"
+  },
+  "resolutions": {
+    "inuit-spacing": "0.7.0"
   }
 }

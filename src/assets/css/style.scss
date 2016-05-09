@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 /*!
  *
@@ -11,88 +11,91 @@
 // *******      SETTINGS        *******
 // ************************************
 
-    @import "settings/setup/*.*";
+    @import 'settings/setup/*.*';
     // .......................
-    @import "inuit-defaults/_settings.defaults";
-    @import "inuit-responsive-settings/_settings.responsive";
-    @import "a73-inuit-colors-settings/_settings.colors";
-    @import "a73-inuit-z-index-settings/_settings.z-index";
+    @import 'inuit-defaults/settings.defaults';
+    @import 'inuit-responsive-settings/settings.responsive';
+    @import 'a73-inuit-colors-settings/settings.colors';
+    @import 'a73-inuit-z-index-settings/settings.z-index';
+    @import 'a73-inuit-md-icon-settings/settings.md-icon';
     // .......................
-    @import "settings/*.*";
+    @import 'settings/*.*';
 
 // ************************************
 // *******      #TOOLS          *******
 // ************************************
 
 
-    @import "tools/setup/*.*";
+    @import 'tools/setup/*.*';
     // .................
-    @import "inuit-functions/_tools.functions";
-    @import "inuit-mixins/_tools.mixins";
-    @import "inuit-responsive-tools/_tools.responsive";
-    @import "inuit-tools-widths/_tools.widths";
-    @import "inuit-tools-pull/_tools.pull";
-    @import "inuit-tools-push/_tools.push";
-    @import "a73-inuit-colors-tools/_tools.colors";
-    @import "a73-inuit-z-index-tools/_tools.z-index";
+    @import 'inuit-functions/tools.functions';
+    @import 'inuit-mixins/tools.mixins';
+    @import 'inuit-responsive-tools/tools.responsive';
+    @import 'inuit-tools-widths/tools.widths';
+    @import 'inuit-tools-pull/tools.pull';
+    @import 'inuit-tools-push/tools.push';
+    @import 'a73-inuit-colors-tools/tools.colors';
+    @import 'a73-inuit-z-index-tools/tools.z-index';
     // .................
-    @import "tools/*.*";
+    @import 'tools/*.*';
 
 // ************************************
 // *******      #GENERIC        *******
 // ************************************
 
-    @import "generic/setup/*.*";
+    @import 'generic/setup/*.*';
     // ......................
-    @import "inuit-box-sizing/_generic.box-sizing";
-    @import "inuit-normalize/_generic.normalize";
-    @import "inuit-reset/_generic.reset";
-    @import "inuit-shared/_generic.shared";
+    @import 'inuit-box-sizing/generic.box-sizing';
+    @import 'inuit-normalize/generic.normalize';
+    @import 'inuit-reset/generic.reset';
+    @import 'inuit-shared/generic.shared';
+    @import 'a73-inuit-md-icon-generics/generics.md-icon';
     // ......................
-    @import "generic/override/*.*";
-    @import "generic/*.*";
+    @import 'generic/override/*.*';
+    @import 'generic/*.*';
 
 
 // ************************************
 // *******      #BASE           *******
 // ************************************
 
-    @import "base/setup/*.*";
+    @import 'base/setup/*.*';
     // ...................
-    @import "inuit-page/_base.page";
-    @import "inuit-headings/_base.headings";
-    @import "inuit-paragraphs/_base.paragraphs";
-    @import "inuit-lists/_base.lists";
-    @import "inuit-images/_base.images";
+    @import 'inuit-page/base.page';
+    @import 'inuit-headings/base.headings';
+    @import 'inuit-paragraphs/base.paragraphs';
+    @import 'inuit-lists/base.lists';
+    @import 'inuit-images/base.images';
     // ...................
-    @import "base/override/*.*";
-    @import "base/*.*";
+    @import 'base/override/*.*';
+    @import 'base/*.*';
 
 // ************************************
 // *******      #OBJECTS        *******
 // ************************************
 
-    @import "objects/setup/*.*";
+    @import 'objects/setup/*.*';
     // ......................
-    @import "inuit-layout/_objects.layout";
-    @import "inuit-block/_objects.block";
-    @import "inuit-box/_objects.box";
-    @import "inuit-buttons/_objects.buttons";
-    @import "inuit-flag/_objects.flag";
-    @import "inuit-icon/_objects.icon";
-    @import "inuit-list-bare/_objects.list-bare";
-    @import "inuit-list-block/_objects.list-block";
-    @import "inuit-list-inline/_objects.list-inline";
-    @import "inuit-list-ui/_objects.list-ui";
-    @import "inuit-media/_objects.media";
-    @import "inuit-pack/_objects.pack";
-    @import "inuit-page-wrap/_objects.page-wrap";
-    @import "inuit-tables/_objects.tables";
-    @import "inuit-tabs/_objects.tabs";
-    @import "inuit-text-input/_objects.text-input";
+    @import 'inuit-layout/objects.layout';
+    @import 'inuit-block/objects.block';
+    @import 'inuit-box/objects.box';
+    @import 'inuit-buttons/objects.buttons';
+    @import 'inuit-flag/objects.flag';
+    @import 'inuit-icon/objects.icon';
+    @import 'inuit-list-bare/objects.list-bare';
+    @import 'inuit-list-block/objects.list-block';
+    @import 'inuit-list-inline/objects.list-inline';
+    @import 'inuit-list-ui/objects.list-ui';
+    @import 'inuit-media/objects.media';
+    @import 'inuit-pack/objects.pack';
+    @import 'inuit-page-wrap/objects.page-wrap';
+    @import 'inuit-tables/objects.tables';
+    @import 'inuit-tabs/objects.tabs';
+    @import 'inuit-text-input/objects.text-input';
+    @import 'a73-inuit-md-icon-objects/objects.md-icon';
     // ............................
-    @import "objects/override/*.*";
-    @import "objects/*.*";
+    @import 'objects/override/*.*';
+    @import 'objects/*.*';
 
 
 
@@ -100,12 +103,12 @@
 // *******      #COMPONENTS     *******
 // ************************************
 
-    @import "components/setup/*.*";
+    @import 'components/setup/*.*';
     // ...................
     // bower components
     // .........................
-    @import "components/override/*.*";
-    @import "components/*.*";
+    @import 'components/override/*.*';
+    @import 'components/*.*';
 
 
 
@@ -113,45 +116,45 @@
 // *******      #PLUGINS        *******
 // ************************************
 
-    @import "plugins/setup/*.*";
+    @import 'plugins/setup/*.*';
     // ...................
     // bower components
     // .........................
-    @import "plugins/override/*.*";
-    @import "plugins/*.*";
+    @import 'plugins/override/*.*';
+    @import 'plugins/*.*';
 
 // ************************************
 // *******      #TRUMPS         *******
 // ************************************
 
-    @import "trumps/setup/*.*";
+    @import 'trumps/setup/*.*';
     // .....................
-    @import "inuit-clearfix/_trumps.clearfix";
-    @import "inuit-widths/_trumps.widths";
-    @import "inuit-widths-responsive/_trumps.widths-responsive";
-    @import "inuit-pull/_trumps.pull";
-    @import "inuit-responsive-pull/_trumps.pull-responsive";
-    @import "inuit-push/_trumps.push";
-    @import "inuit-responsive-push/_trumps.push-responsive";
-    @import "inuit-spacing/_trumps.spacing";
-    @import "inuit-spacing-responsive/_trumps.spacing-responsive";
-    @import "inuit-float/_trumps.helper.float";
-    @import "inuit-responsive-float/_trumps.helper.float-responsive";
-    @import "inuit-font-weight/_trumps.helper.font-weight";
-    @import "inuit-responsive-font-weight/_trumps.helper.font-weight-responsive";
-    @import "inuit-text-align/_trumps.helper.text-align";
-    @import "inuit-responsive-text-align/_trumps.helper.text-align-responsive";
-    @import "inuit-hide/_trumps.hide";
-    @import "inuit-print/_trumps.print";
-    @import "inuit-headings-trumps/_trumps.headings";
-    @import "inuit-responsive-headings/_trumps.headings-responsive";
+    @import 'inuit-clearfix/trumps.clearfix';
+    @import 'inuit-widths/trumps.widths';
+    @import 'inuit-widths-responsive/trumps.widths-responsive';
+    @import 'inuit-pull/trumps.pull';
+    @import 'inuit-responsive-pull/trumps.pull-responsive';
+    @import 'inuit-push/trumps.push';
+    @import 'inuit-responsive-push/trumps.push-responsive';
+    @import 'inuit-spacing/trumps.spacing';
+    @import 'inuit-spacing-responsive/trumps.spacing-responsive';
+    @import 'inuit-float/trumps.helper.float';
+    @import 'inuit-responsive-float/trumps.helper.float-responsive';
+    @import 'inuit-font-weight/trumps.helper.font-weight';
+    @import 'inuit-responsive-font-weight/trumps.helper.font-weight-responsive';
+    @import 'inuit-text-align/trumps.helper.text-align';
+    @import 'inuit-responsive-text-align/trumps.helper.text-align-responsive';
+    @import 'inuit-hide/trumps.hide';
+    @import 'inuit-print/trumps.print';
+    @import 'inuit-headings-trumps/trumps.headings';
+    @import 'inuit-responsive-headings/trumps.headings-responsive';
     // .............................................................
-    @import "trumps/override/*.*";
-    @import "trumps/*.*";
+    @import 'trumps/override/*.*';
+    @import 'trumps/*.*';
 
 
 ///////////////////////////////////
-    @import "shame";
+    @import 'shame';
     // ................
 
 

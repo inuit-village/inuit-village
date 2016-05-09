@@ -5,6 +5,7 @@
       "modules": [
         "colors",
         "default",
+        "md-icon",
         "responsive",
         "z-index"
       ]
@@ -26,6 +27,7 @@
       "layer": "generic",
       "modules": [
         "box-sizing",
+        "md-icon",
         "normalize",
         "reset",
         "shared"
@@ -53,6 +55,7 @@
         "list-block",
         "list-inline",
         "list-ui",
+        "md-icon",
         "media",
         "pack",
         "page-wrap",

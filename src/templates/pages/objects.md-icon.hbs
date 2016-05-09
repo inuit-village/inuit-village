@@ -1,0 +1,37 @@
+---
+title: "_objects.md-icon.scss"
+source: "https://github.com/a73-inuit/objects.md-icon/blob/master/_objects.md-icon.scss"
+author: "Rodrigo Erades"
+author_url: "https://github.com/area73"
+required: false
+dependences: [
+{name: "a73-inuit-md-icon-generics", url: "generic.md-icon.html"},
+{name: "a73-inuit-md-icon-settings", url: "settings.md-icon.html"}
+]
+usages: []
+
+package_name: "a73-inuit-md-icon-objects"
+version: "0.1.7"
+
+tab_markup: "objects.md-icon--markup"
+tab_demo: "objects.md-icon--demo"
+tab_modifier: "objects.md-icon--modifier"
+tab_settings: "objects.md-icon--settings"
+
+---
+
+<p>This is an intention to use an icon font within InuitCSS framework</p>
+<p>This Igloo uses the Material Design Icon Font from Google, and it is oriented to use <strong>font ligatures</strong> to display the
+    symbols</p>
+<p> If you haven't heard about <strong>font ligatures</strong>, you should read <a
+        href="http://alistapart.com/article/the-era-of-symbol-fonts" target="_blank">this article</a>. It will change
+    your way of thinking about how to display font icons (there is no need to create a class for every icon anymore)</p>
+<p>
+    This Object also requires 2 other Igloos. <br>
+    <a href="generics.md-icon.html">a73-inuit-md-icon-generics</a> which is responsible of creating  font-face<br>
+    <a href="settings.md-icon.html">a73-inuit-md-icon-settings</a> that has some font settings plus the codepoints and ASCII code to represent the icons.<br>
+    The codepoints are used as a reference, but you can easily used them to create specific classes for a single icon (in the case you need them).
+</p>
+
+<p>Please don't forget to include also in your project the <a href="https://github.com/google/material-design-icons/tree/master/iconfont" target="_blank">Material Design Fonts (Woff, ttf, etc)</a></p>
+

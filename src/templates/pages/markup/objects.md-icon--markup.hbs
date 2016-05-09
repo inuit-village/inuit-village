@@ -1,0 +1,17 @@
+
+<p>The only important thing to consider is to use one of the <a href="https://github.com/a73-inuit/settings.md-icon/blob/master/_settings.md-icon.scss" target="_blank"> named ligatures codepoints</a> inside the tag</p>
+<pre class="prettyprint">
+{{#html2txt}}
+<p>
+    <span class="md-icon">arrow_drop_down</span>
+    Lorem Ipsum
+</p>
+
+<!-- for browsers older than IE 10 you can use ASCII code -->
+<p>
+    <span class="md-icon">&#xe5c5</span>
+    Lorem Ipsum
+</p>
+
+{{/html2txt}}
+</pre>
