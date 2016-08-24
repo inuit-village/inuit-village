@@ -29,3 +29,18 @@ dist/
 
 #gh-pages for web site
 gh-pages/
+
+npm-debug.log
+nohup.out
+selenium-debug.log
+
+# exclued selenium.jar from GitHub it's 21MB!
+nightwatch
+nightwatch/selenium.jar
+
+# exclude chromedriver as its 12MB and changes frequently!
+nightwatch/chromedriver
+
+reports
+screenshots
+.env

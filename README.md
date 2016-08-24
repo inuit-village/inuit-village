@@ -4,11 +4,11 @@
 This project provides a brief introduction to [inuitcss](https://github.com/inuitcss) by [Harry Roberts](https://github.com/csswizardry). 
 It shows the features, objects and helpers of the framework, so that you know with what you can mess around with.
 
-It is intented to be a repository and a documentation place for all posible inuit elements (not only the ones created by Harry Roberts)
+It is intented to be a repository and a documentation place for all possible inuit elements (not only the ones created by Harry Roberts)
 
 
-It follows ITCSS phylosophy and best practice
-
+It follows ITCSS philosophy and best practice
+git 
 
 ### ITCSS
                
@@ -28,6 +28,8 @@ It follows ITCSS phylosophy and best practice
     run bower install
     run grunt 
     go to your local host  (http://localhost:8000) and enjoy !
+
+##
 
 
 ## CREDITS

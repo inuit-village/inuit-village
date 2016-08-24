@@ -1,7 +1,8 @@
 {
-  "name": "inuit-kitchen-sink",
-  "version": "0.2.0",
+  "name": "inuit-village",
+  "version": "0.2.1",
   "devDependencies": {
+    "env2": "^2.1.1",
     "grunt": "^0.4.5",
     "grunt-assemble": "^0.4.0",
     "grunt-autoprefixer": "3.0.4",
@@ -21,6 +22,18 @@
     "handlebars-helper-prettify": "^0.2.1",
     "jit-grunt": "^0.9.1",
     "js-beautify": "^1.6.2",
-    "prettify": "^0.1.7"
+    "prettify": "^0.1.7",
+    "saucelabs": "^1.2.0",
+    "nightwatch": "^0.9.8",
+    "selenium-download": "^2.0.6"
+  },
+  "scripts": {
+    "postinstall": "node nightwatch.conf.js",
+    "test": "./node_modules/.bin/nightwatch --env local",
+    "ie": "./node_modules/.bin/nightwatch -e ie11",
+    "sauce": "./node_modules/.bin/nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
+    "upload": "node test/e2e/upload_screenshots_to_s3.js",
+    "e2e": "npm run sauce; npm run upload",
+    "dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
   }
 }
