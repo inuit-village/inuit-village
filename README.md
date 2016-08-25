@@ -21,6 +21,11 @@ It follows ITCSS phylosophy and best practice
           -         TRUMPS      (!importants)
     
         
+## BEST PRACTICES
+
+[gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+[B.E.M.](https://en.bem.info/methodology/quick-start/)
+
 
 ## INSALLATION
 
@@ -28,6 +33,7 @@ It follows ITCSS phylosophy and best practice
     run bower install
     run grunt 
     go to your local host  (http://localhost:8000) and enjoy !
+
 
 
 ## CREDITS
