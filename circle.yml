@@ -8,11 +8,11 @@ machine:
 dependencies:
   pre:
     - npm install npm -g
-    - npm install -g bower
+    - npm install bower -g
     - gem install sass true
     - gem install sass-globbing
     - npm install
-    - ../bower install
+    - bower install
 test:
   override:
     - sass -r sass-globbing src/assets/css/style.scss test/style.css --sourcemap=none  --load-path bower_components
