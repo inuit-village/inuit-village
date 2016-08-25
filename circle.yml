@@ -9,11 +9,9 @@ dependencies:
   pre:
     - npm install npm -g
     - gem install sass true
+    - gem install sass-globbing
     - npm install
+    - bower install
 test:
   override:
-    - sass assets/css/style.scss test/style.css --sourcemap=none
-    - true-cli test/e2e/scss/global.scss
-    - npm rebuild node-sass
-    - node-sass assets/css/style.scss -o test/
-    - npm mocha-test
+    - sass -r sass-globbing src/assets/css/style.scss test/style.css --sourcemap=none  --load-path bower_components
