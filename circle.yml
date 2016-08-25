@@ -8,6 +8,7 @@ machine:
 dependencies:
   pre:
     - npm install npm -g
+    - npm install -g bower
     - gem install sass true
     - gem install sass-globbing
     - npm install
