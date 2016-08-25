@@ -15,4 +15,4 @@ test:
   override:
     - sass -r sass-globbing src/assets/css/style.scss test/style.css --sourcemap=none  --load-path bower_components
     - true-cli test/e2e/scss/global.scss
-    - npm mocha-test
+    - npm run mocha-test
