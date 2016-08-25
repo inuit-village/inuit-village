@@ -62,5 +62,5 @@
     "saucelabs": "^1.2.0",
     "nightwatch": "^0.9.8",
     "selenium-download": "^2.0.6"
-  },
+  }
 }
