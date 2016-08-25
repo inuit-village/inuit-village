@@ -12,8 +12,7 @@ dependencies:
     - gem install sass true
     - gem install sass-globbing
     - npm install
-    - pwd
-    - ls -la
+    - cd ../
     - bower install
 test:
   override:
