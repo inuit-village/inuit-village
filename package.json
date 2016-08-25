@@ -1,8 +1,40 @@
 {
   "name": "inuit-village",
   "version": "0.2.1",
+  "description": "Repo with docs and examples of ITCSS / inuitcss files",
+  "main": "src/assets/css/style.scss",
+  "scripts": {
+    "postinstall": "node nightwatch.conf.js",
+    "nightwatch": "./node_modules/.bin/nightwatch --env local",
+    "nightwatch-ie": "./node_modules/.bin/nightwatch -e ie11",
+    "nightwatch-sauce": "./node_modules/.bin/nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
+    "nightwatch-upload": "node test/e2e/upload_screenshots_to_s3.js",
+    "e2e-nightwatch": "npm run nightwatch-sauce; npm run nightwatch-upload",
+    "nightwatch-dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run nightwatch-upload'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inuit-village/inuit-village.git"
+  },
+  "keywords": [
+    "oocss",
+    "sass",
+    "bem",
+    "itcss",
+    "css",
+    "inuitcss",
+    "best practices"
+  ],
+  "author": "Rodrigo Erades <rerades@siete3.com>",
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/inuit-village/inuit-village/issues"
+  },
+  "homepage": "https://github.com/inuitcss/inuitcss#readme",
   "devDependencies": {
     "env2": "^2.1.1",
+    "glob": "^7.0.6",
     "grunt": "^0.4.5",
     "grunt-assemble": "^0.4.0",
     "grunt-autoprefixer": "3.0.4",
@@ -17,7 +49,10 @@
     "grunt-processhtml": "0.3.13",
     "handlebars-helpers": "^0.5.8",
     "jit-grunt": "^0.9.1",
-    "load-grunt-config": "0.19.1"
+    "load-grunt-config": "0.19.1",
+    "mocha": "^3.0.2",
+    "node-sass": "^3.8.0",
+    "sass-true": "^2.1.3"
   },
   "dependencies": {
     "handlebars-helper-prettify": "^0.2.1",
@@ -28,13 +63,4 @@
     "nightwatch": "^0.9.8",
     "selenium-download": "^2.0.6"
   },
-  "scripts": {
-    "postinstall": "node nightwatch.conf.js",
-    "test": "./node_modules/.bin/nightwatch --env local",
-    "ie": "./node_modules/.bin/nightwatch -e ie11",
-    "sauce": "./node_modules/.bin/nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
-    "upload": "node test/e2e/upload_screenshots_to_s3.js",
-    "e2e": "npm run sauce; npm run upload",
-    "dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
-  }
 }
