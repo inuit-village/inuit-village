@@ -12,8 +12,8 @@ dependencies:
     - npm install
 test:
   override:
-    - sass example.main.scss test/example.main.css --sourcemap=none
-    - true-cli test/tests.scss
+    - sass src/assets/css/style.scss test/style.css --sourcemap=none
+    - true-cli test/e2e/scss/global.scss
     - npm rebuild node-sass
-    - node-sass example.main.scss -o test/
-    - npm test
+    - node-sass src/assets/css/style.scss -o test/
+    - npm mocha-test
