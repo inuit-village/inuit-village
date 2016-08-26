@@ -23,9 +23,17 @@ git
         
 ## BEST PRACTICES
 
+###gitflow-workflow
 [gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
+A better workflow to use with git
+
+###B.E.M.
 [B.E.M.](https://en.bem.info/methodology/quick-start/)
+Naming of classes and JS
+
+###Single responsability principe
+[](http://inuit-village.github.io/inuit-village/#sr)
 
 
 ## INSALLATION

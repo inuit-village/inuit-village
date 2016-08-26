@@ -31,8 +31,24 @@ title: "Inuit Village"
                     <li class="list-block__item"><a href="#bem">B.E.M.</a></li>
                     <li class="list-block__item"><a href="#sr">Single responsability principe</a></li>
                     <li class="list-block__item"><a href="#sst">Single source of truth principe</a></li>
+                    <li class="list-block__item"><a href="#gitflow">gitflow-workflow</a></li>
                 </ul>
             </li>
+
+            <li class="list-block__item">
+                <a href="#testing">Testing</a>
+                <ul class="list-block list-block--small">
+                    <li class="list-block__item"><a href="#nightwatch">nightwatch.js</a></li>
+                    <li class="list-block__item"><a href="#ci">Continuous Integratio (CI)</a></li>
+
+
+                </ul>
+            </li>
+
+
+
+
+
             <li class="list-block__item">
                 <a href="#how-to-use">How to use it</a>
                 <ul class="list-block list-block--small">
@@ -217,6 +233,7 @@ title: "Inuit Village"
         }
     </pre>
         </div>
+
         <h3 class="u-mb0"><a name="sr">Single responsability principe</a></h3>
         <div class="box">
 
@@ -240,7 +257,6 @@ title: "Inuit Village"
         </div>
 
         <h3 class="u-mb0"><a name="sst">Single source of truth principe</a></h3>
-
         <div class="box">
             <p>The single source of truth approach takes the single responsibility theory to the next level in that not
                 only is a class created for a single purpose, but also the styles applied to that class come from one
@@ -249,16 +265,34 @@ title: "Inuit Village"
                 never imposed on it by a parent class.</p>
         </div>
 
-        <h3 class="u-mb0"><a name="sst">Testing</a></h3>
-
+        <h3 class="u-mb0"><a name="gitflow">gitflow-workflow</a></h3>
         <div class="box">
-            <p>for testing I dice to use Nightwatch.js following this easy and awesome tutorial <a href="https://github.com/dwyl/learn-nightwatch"target="_blank">https://github.com/dwyl/learn-nightwatch</a>  <br/>
-            </p>
-            <p>I also use  env2 to store local variables  : https://github.com/dwyl/env2#how</p>
-            <p>If you what to test your code in different bowser versions you can use saucelabs: <a href="https://github.com/dwyl/learn-saucelabs" target="_blank">https://github.com/dwyl/learn-saucelabs</p>
-            <p>TODO: circle-ci / travis-ci</p>
+            <p>I create a develop brunch to merge all ohters following  <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">gitflow</a> standards</p>
         </div>
+
     </div>
+
+    <h2 class="u-mb0 u-mt+"><a name="testing">Testing</a></h2>
+    <div class="box box--large box--light-bg">
+        <h3 class="u-mb0"><a name="nightwatch">Nightwatch.js</a></h3>
+        <div class="box">
+            <p>for testing I dice to use Nightwatch.js following this easy and awesome tutorial <a href="https://github.com/dwyl/learn-nightwatch"target="_blank">https://github.com/dwyl/learn-nightwatch</a>  </p>
+            <p>I also use  <a href="https://github.com/dwyl/env2#how" target="_blank" >env2</a> to store local variables</p>
+            <p>If you what to test your code in different browser versions you can use <a href="https://github.com/dwyl/learn-saucelabs" target="_blank">saucelabs</a></p>
+        </div>
+
+        <h3 class="u-mb0"><a name="ci">Continuous Integration with Circle-CI</a></h3>
+        <div class="box">
+            <p>Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day.
+                Each check-in is then verified by an automated build, allowing teams to detect problems early.</p>
+            <p>I use <a href="//circleci.com/" target="_blank">circle-ci</a>. This is a hosted Continuous Integration and Deployment service for web apps. </p>
+            <p>If you contribute to this repo , you will see it's power</p>
+        </div>
+
+
+
+    </div>
+
 
     <h2 class="u-mb0 u-mt+"><a name="how-to-use">How to use it</a></h2>
     <div class="box box--light-bg box--large">
