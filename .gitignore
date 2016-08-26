@@ -45,3 +45,6 @@ nightwatch/chromedriver
 reports
 screenshots
 .env
+
+sassdoc
+
