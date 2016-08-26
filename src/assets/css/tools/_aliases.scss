@@ -1,8 +1,17 @@
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @group API
+/// @author Rodrigo Erades
+/// inuit village
+/// https://github.com/inuit-village/inuit-village
+////
+
 // /*------------------------------------*\
 //     $ALIASES
 // \*------------------------------------*/
 
-// Convert to more convenient names.
+/// Convert to more convenient names.
 $su:            $inuit-base-spacing-unit;
 $su--small:     $inuit-base-spacing-unit--small;
 $su--large:     $inuit-base-spacing-unit--large;
