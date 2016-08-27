@@ -1,6 +1,9 @@
+
+
 ;(function ( $, window, undefined ) {
 
     /** Default settings */
+    "use strict";
     var defaults = {
         active: null,
         event: 'click',

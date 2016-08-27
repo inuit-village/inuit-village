@@ -1,10 +1,14 @@
+
+
 /**
  * Created by rerades on 6/4/16.
  */
 
+
+
 // READ CSS AND GRABB STYLES
 // -------------------------
-!(function ($) {
+(function ($) {
     $.fn.classes = function (callback) {
         var classes = [];
         $.each(this, function (i, v) {
@@ -25,19 +29,19 @@
     };
 })(jQuery);
 
-
 // TODO: make it dynamic
-cssFileName = "/assets/css/style.css";
+var cssFileName = "/assets/css/style.css";
 // some classes that we whant to include
-includedClasses = [];
+var includedClasses = [];
 includedClasses.push('[');
 includedClasses.push(']');
 
 $(function () {
+    'use strict';
     console.log('init');
     // gets array of classes defined in CSS
     // ------------------------------------
-    allClasses = [];
+    var allClasses = [];
     $.get(cssFileName, function (data) {
         // console.log(data);
         var patt1 = /\.([^.,}{ \r\n ]+)/g;
@@ -47,7 +51,7 @@ $(function () {
         
         result.forEach(function (value) {
             // we take of "."
-            strippedValue = value.substring(1,value.length);
+            var strippedValue = value.substring(1,value.length);
             // get read of "\"
             strippedValue = strippedValue.replace(/\\/g, '');
             // get only element not selector "clearfix:after" --> "clearfix"
@@ -55,8 +59,9 @@ $(function () {
             strippedValue = strippedValue.replace(':', '');
 
             // console.log(strippedValue);
-
-            (allClasses.indexOf(strippedValue) === -1 && strippedValue !== '') ? allClasses.push(strippedValue) : null;
+            if (allClasses.indexOf(strippedValue) === -1 && strippedValue !== '') {
+                allClasses.push(strippedValue) ;
+            }
         });
 
         allClasses = allClasses.concat(includedClasses);
@@ -67,10 +72,10 @@ $(function () {
         $('*').filter(function () {
             $(this).children().each(function(data){
                 // console.log($(this).attr("class"));
-                obj = $(this);
-                tempClass = obj.classes();
+                var obj = $(this);
+                var tempClass = obj.classes();
                 tempClass.forEach(function (value) {
-                    if (allClasses.indexOf(value) == -1 && value.length > 0 )  {
+                    if (allClasses.indexOf(value) === -1 && value.length > 0 )  {
                         obj.addClass('no-css');
                        //  console.warn('class not found: ' , value);
                     }
